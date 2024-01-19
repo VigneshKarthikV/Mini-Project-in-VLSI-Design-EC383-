@@ -1,0 +1,26 @@
+[INFO]: Run Directory: /openlane/designs/designs/ci/picorv_32/runs/RUN_2024.01.19_10.09.38
+[INFO]: Saving runtime environment...
+[INFO]: Preparing LEF files for the nom corner...
+[INFO]: Preparing LEF files for the min corner...
+[INFO]: Preparing LEF files for the max corner...
+[WARNING]: PNR_SDC_FILE is not set. It is recommended to write a custom SDC file for the design. Defaulting to BASE_SDC_FILE
+[WARNING]: SIGNOFF_SDC_FILE is not set. It is recommended to write a custom SDC file for the design. Defaulting to BASE_SDC_FILE
+[INFO]: Running linter (Verilator) (log: designs/designs/ci/picorv_32/runs/RUN_2024.01.19_10.09.38/logs/synthesis/linter.log)...
+[ERROR]: 2 errors found by linter
+[ERROR]: Step 0 (verilator_lint_check) failed with error:
+-code 1 -level 0 -errorcode NONE -errorinfo {
+    while executing
+"throw_error"
+    (procedure "run_verilator" line 86)
+    invoked from within
+"run_verilator"
+    (procedure "run_verilator_step" line 3)
+    invoked from within
+"run_verilator_step"} -errorline 1
+[INFO]: Saving current set of views in 'designs/designs/ci/picorv_32/runs/RUN_2024.01.19_10.09.38/results/final'...
+[INFO]: Generating final set of reports...
+[INFO]: Created manufacturability report at 'designs/designs/ci/picorv_32/runs/RUN_2024.01.19_10.09.38/reports/manufacturability.rpt'.
+[INFO]: Created metrics report at 'designs/designs/ci/picorv_32/runs/RUN_2024.01.19_10.09.38/reports/metrics.csv'.
+[INFO]: Saving runtime environment...
+[ERROR]: Flow failed.
+[INFO]: The failure may have been because of the following warnings:

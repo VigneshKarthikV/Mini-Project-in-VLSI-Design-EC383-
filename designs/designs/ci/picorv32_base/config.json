@@ -1,0 +1,7 @@
+{
+    "DESIGN_NAME": "picorv32_base",
+    "VERILOG_FILES": "dir::src/*.v",
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 10.0,
+    "FP_PDN_MULTILAYER": true
+}
