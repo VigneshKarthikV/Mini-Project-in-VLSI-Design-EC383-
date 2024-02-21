@@ -11,3 +11,5 @@
 */matrix_*.json
 */*_config.json
 */*_config.tcl
+/designs/ci/picorv32_base/runs/*
+/designs/ci/test_sram_macro/runs/*
