@@ -1,0 +1,2 @@
+[WARNING ANT-0009] Net _00172_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net genblk1.pcpi_mul.rd\[28\] requires more than 10 diodes per gate to repair violations.

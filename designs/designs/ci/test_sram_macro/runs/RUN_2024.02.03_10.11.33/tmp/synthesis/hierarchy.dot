@@ -1,0 +1,14 @@
+digraph "test_sram_macro" {
+label="test_sram_macro";
+rankdir="LR";
+remincross=true;
+n1 [ shape=octagon, label="dataout", color="black", fontcolor="black" ];
+n2 [ shape=octagon, label="datain", color="black", fontcolor="black" ];
+n3 [ shape=octagon, label="write_allow", color="black", fontcolor="black" ];
+n4 [ shape=octagon, label="addr", color="black", fontcolor="black" ];
+n5 [ shape=octagon, label="we", color="black", fontcolor="black" ];
+n6 [ shape=octagon, label="cs", color="black", fontcolor="black" ];
+n7 [ shape=octagon, label="clk", color="black", fontcolor="black" ];
+n8 [ shape=octagon, label="rst_n", color="black", fontcolor="black" ];
+c9 [ shape=record, label="{{}|submodule\ntest_sram_macro_unwrapped|{}}",  ];
+}

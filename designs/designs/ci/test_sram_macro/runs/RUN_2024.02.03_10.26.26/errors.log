@@ -1,0 +1,15 @@
+[ERROR]: during executing openroad script /openlane/scripts/openroad/pdn.tcl
+[ERROR]: Log: designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.26.26/logs/floorplan/13-pdn.log
+[ERROR]: Last 10 lines:
+[INFO]: Setting input delay to: 2.0
+[INFO]: Setting load to: 0.033442
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+[WARNING PDN-0234] submodule.sram0 has not been placed and fixed.
+[WARNING PDN-0234] submodule.sram1 has not been placed and fixed.
+[ERROR PDN-0235] Design has unplaced macros.
+PDN-0235
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...

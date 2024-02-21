@@ -1,0 +1,1871 @@
+module test_sram_macro (clk,
+    cs,
+    rst_n,
+    we,
+    addr,
+    datain,
+    dataout,
+    write_allow);
+ input clk;
+ input cs;
+ input rst_n;
+ input we;
+ input [7:0] addr;
+ input [63:0] datain;
+ output [63:0] dataout;
+ input [7:0] write_allow;
+
+ wire _000_;
+ wire _001_;
+ wire _002_;
+ wire _003_;
+ wire _004_;
+ wire _005_;
+ wire _006_;
+ wire _007_;
+ wire _008_;
+ wire _009_;
+ wire _010_;
+ wire _011_;
+ wire _012_;
+ wire _013_;
+ wire _014_;
+ wire _015_;
+ wire _016_;
+ wire _017_;
+ wire _018_;
+ wire _019_;
+ wire _020_;
+ wire _021_;
+ wire _022_;
+ wire _023_;
+ wire _024_;
+ wire _025_;
+ wire _026_;
+ wire _027_;
+ wire _028_;
+ wire _029_;
+ wire _030_;
+ wire _031_;
+ wire _032_;
+ wire _033_;
+ wire _034_;
+ wire _035_;
+ wire _036_;
+ wire _037_;
+ wire _038_;
+ wire _039_;
+ wire _040_;
+ wire _041_;
+ wire _042_;
+ wire _043_;
+ wire _044_;
+ wire _045_;
+ wire _046_;
+ wire _047_;
+ wire _048_;
+ wire _049_;
+ wire _050_;
+ wire _051_;
+ wire _052_;
+ wire _053_;
+ wire _054_;
+ wire _055_;
+ wire _056_;
+ wire _057_;
+ wire _058_;
+ wire _059_;
+ wire _060_;
+ wire _061_;
+ wire _062_;
+ wire _063_;
+ wire _064_;
+ wire _065_;
+ wire _066_;
+ wire _067_;
+ wire _068_;
+ wire _069_;
+ wire _070_;
+ wire _071_;
+ wire _072_;
+ wire _073_;
+ wire _074_;
+ wire _075_;
+ wire _076_;
+ wire _077_;
+ wire _078_;
+ wire _079_;
+ wire _080_;
+ wire _081_;
+ wire _082_;
+ wire _083_;
+ wire _084_;
+ wire _085_;
+ wire _086_;
+ wire _087_;
+ wire _088_;
+ wire _089_;
+ wire _090_;
+ wire _091_;
+ wire _092_;
+ wire _093_;
+ wire _094_;
+ wire _095_;
+ wire _096_;
+ wire _097_;
+ wire _098_;
+ wire _099_;
+ wire _100_;
+ wire _101_;
+ wire _102_;
+ wire _103_;
+ wire _104_;
+ wire _105_;
+ wire _106_;
+ wire _107_;
+ wire _108_;
+ wire _109_;
+ wire _110_;
+ wire _111_;
+ wire _112_;
+ wire _113_;
+ wire _114_;
+ wire _115_;
+ wire _116_;
+ wire _117_;
+ wire _118_;
+ wire _119_;
+ wire _120_;
+ wire _121_;
+ wire _122_;
+ wire _123_;
+ wire _124_;
+ wire _125_;
+ wire _126_;
+ wire _127_;
+ wire _128_;
+ wire _129_;
+ wire _130_;
+ wire _131_;
+ wire _132_;
+ wire _133_;
+ wire _134_;
+ wire _135_;
+ wire _136_;
+ wire _137_;
+ wire _138_;
+ wire _139_;
+ wire _140_;
+ wire _141_;
+ wire _142_;
+ wire _143_;
+ wire _144_;
+ wire _145_;
+ wire _146_;
+ wire _147_;
+ wire _148_;
+ wire _149_;
+ wire _150_;
+ wire _151_;
+ wire _152_;
+ wire _153_;
+ wire _154_;
+ wire _155_;
+ wire _156_;
+ wire _157_;
+ wire _158_;
+ wire _159_;
+ wire _160_;
+ wire _161_;
+ wire _162_;
+ wire _163_;
+ wire _164_;
+ wire _165_;
+ wire _166_;
+ wire _167_;
+ wire _168_;
+ wire _169_;
+ wire _170_;
+ wire _171_;
+ wire _172_;
+ wire _173_;
+ wire _174_;
+ wire _175_;
+ wire _176_;
+ wire _177_;
+ wire _178_;
+ wire _179_;
+ wire _180_;
+ wire _181_;
+ wire _182_;
+ wire _183_;
+ wire _184_;
+ wire _185_;
+ wire _186_;
+ wire _187_;
+ wire _188_;
+ wire _189_;
+ wire _190_;
+ wire _191_;
+ wire _192_;
+ wire _193_;
+ wire _194_;
+ wire _195_;
+ wire _196_;
+ wire _197_;
+ wire _198_;
+ wire _199_;
+ wire _200_;
+ wire _201_;
+ wire _202_;
+ wire _203_;
+ wire _204_;
+ wire _205_;
+ wire _206_;
+ wire _207_;
+ wire _208_;
+ wire _209_;
+ wire _210_;
+ wire _211_;
+ wire _212_;
+ wire _213_;
+ wire _214_;
+ wire _215_;
+ wire _216_;
+ wire _217_;
+ wire _218_;
+ wire _219_;
+ wire _220_;
+ wire _221_;
+ wire _222_;
+ wire _223_;
+ wire _224_;
+ wire _225_;
+ wire _226_;
+ wire _227_;
+ wire _228_;
+ wire _229_;
+ wire _230_;
+ wire _231_;
+ wire _232_;
+ wire _233_;
+ wire _234_;
+ wire _235_;
+ wire _236_;
+ wire _237_;
+ wire _238_;
+ wire _239_;
+ wire _240_;
+ wire _241_;
+ wire _242_;
+ wire \submodule.cs_int ;
+ wire \submodule.dataout_int[0] ;
+ wire \submodule.dataout_int[10] ;
+ wire \submodule.dataout_int[11] ;
+ wire \submodule.dataout_int[12] ;
+ wire \submodule.dataout_int[13] ;
+ wire \submodule.dataout_int[14] ;
+ wire \submodule.dataout_int[15] ;
+ wire \submodule.dataout_int[16] ;
+ wire \submodule.dataout_int[17] ;
+ wire \submodule.dataout_int[18] ;
+ wire \submodule.dataout_int[19] ;
+ wire \submodule.dataout_int[1] ;
+ wire \submodule.dataout_int[20] ;
+ wire \submodule.dataout_int[21] ;
+ wire \submodule.dataout_int[22] ;
+ wire \submodule.dataout_int[23] ;
+ wire \submodule.dataout_int[24] ;
+ wire \submodule.dataout_int[25] ;
+ wire \submodule.dataout_int[26] ;
+ wire \submodule.dataout_int[27] ;
+ wire \submodule.dataout_int[28] ;
+ wire \submodule.dataout_int[29] ;
+ wire \submodule.dataout_int[2] ;
+ wire \submodule.dataout_int[30] ;
+ wire \submodule.dataout_int[31] ;
+ wire \submodule.dataout_int[32] ;
+ wire \submodule.dataout_int[33] ;
+ wire \submodule.dataout_int[34] ;
+ wire \submodule.dataout_int[35] ;
+ wire \submodule.dataout_int[36] ;
+ wire \submodule.dataout_int[37] ;
+ wire \submodule.dataout_int[38] ;
+ wire \submodule.dataout_int[39] ;
+ wire \submodule.dataout_int[3] ;
+ wire \submodule.dataout_int[40] ;
+ wire \submodule.dataout_int[41] ;
+ wire \submodule.dataout_int[42] ;
+ wire \submodule.dataout_int[43] ;
+ wire \submodule.dataout_int[44] ;
+ wire \submodule.dataout_int[45] ;
+ wire \submodule.dataout_int[46] ;
+ wire \submodule.dataout_int[47] ;
+ wire \submodule.dataout_int[48] ;
+ wire \submodule.dataout_int[49] ;
+ wire \submodule.dataout_int[4] ;
+ wire \submodule.dataout_int[50] ;
+ wire \submodule.dataout_int[51] ;
+ wire \submodule.dataout_int[52] ;
+ wire \submodule.dataout_int[53] ;
+ wire \submodule.dataout_int[54] ;
+ wire \submodule.dataout_int[55] ;
+ wire \submodule.dataout_int[56] ;
+ wire \submodule.dataout_int[57] ;
+ wire \submodule.dataout_int[58] ;
+ wire \submodule.dataout_int[59] ;
+ wire \submodule.dataout_int[5] ;
+ wire \submodule.dataout_int[60] ;
+ wire \submodule.dataout_int[61] ;
+ wire \submodule.dataout_int[62] ;
+ wire \submodule.dataout_int[63] ;
+ wire \submodule.dataout_int[6] ;
+ wire \submodule.dataout_int[7] ;
+ wire \submodule.dataout_int[8] ;
+ wire \submodule.dataout_int[9] ;
+ wire \submodule.dataout_stored[0] ;
+ wire \submodule.dataout_stored[10] ;
+ wire \submodule.dataout_stored[11] ;
+ wire \submodule.dataout_stored[12] ;
+ wire \submodule.dataout_stored[13] ;
+ wire \submodule.dataout_stored[14] ;
+ wire \submodule.dataout_stored[15] ;
+ wire \submodule.dataout_stored[16] ;
+ wire \submodule.dataout_stored[17] ;
+ wire \submodule.dataout_stored[18] ;
+ wire \submodule.dataout_stored[19] ;
+ wire \submodule.dataout_stored[1] ;
+ wire \submodule.dataout_stored[20] ;
+ wire \submodule.dataout_stored[21] ;
+ wire \submodule.dataout_stored[22] ;
+ wire \submodule.dataout_stored[23] ;
+ wire \submodule.dataout_stored[24] ;
+ wire \submodule.dataout_stored[25] ;
+ wire \submodule.dataout_stored[26] ;
+ wire \submodule.dataout_stored[27] ;
+ wire \submodule.dataout_stored[28] ;
+ wire \submodule.dataout_stored[29] ;
+ wire \submodule.dataout_stored[2] ;
+ wire \submodule.dataout_stored[30] ;
+ wire \submodule.dataout_stored[31] ;
+ wire \submodule.dataout_stored[32] ;
+ wire \submodule.dataout_stored[33] ;
+ wire \submodule.dataout_stored[34] ;
+ wire \submodule.dataout_stored[35] ;
+ wire \submodule.dataout_stored[36] ;
+ wire \submodule.dataout_stored[37] ;
+ wire \submodule.dataout_stored[38] ;
+ wire \submodule.dataout_stored[39] ;
+ wire \submodule.dataout_stored[3] ;
+ wire \submodule.dataout_stored[40] ;
+ wire \submodule.dataout_stored[41] ;
+ wire \submodule.dataout_stored[42] ;
+ wire \submodule.dataout_stored[43] ;
+ wire \submodule.dataout_stored[44] ;
+ wire \submodule.dataout_stored[45] ;
+ wire \submodule.dataout_stored[46] ;
+ wire \submodule.dataout_stored[47] ;
+ wire \submodule.dataout_stored[48] ;
+ wire \submodule.dataout_stored[49] ;
+ wire \submodule.dataout_stored[4] ;
+ wire \submodule.dataout_stored[50] ;
+ wire \submodule.dataout_stored[51] ;
+ wire \submodule.dataout_stored[52] ;
+ wire \submodule.dataout_stored[53] ;
+ wire \submodule.dataout_stored[54] ;
+ wire \submodule.dataout_stored[55] ;
+ wire \submodule.dataout_stored[56] ;
+ wire \submodule.dataout_stored[57] ;
+ wire \submodule.dataout_stored[58] ;
+ wire \submodule.dataout_stored[59] ;
+ wire \submodule.dataout_stored[5] ;
+ wire \submodule.dataout_stored[60] ;
+ wire \submodule.dataout_stored[61] ;
+ wire \submodule.dataout_stored[62] ;
+ wire \submodule.dataout_stored[63] ;
+ wire \submodule.dataout_stored[6] ;
+ wire \submodule.dataout_stored[7] ;
+ wire \submodule.dataout_stored[8] ;
+ wire \submodule.dataout_stored[9] ;
+ wire \submodule.dout1[0] ;
+ wire \submodule.dout1[10] ;
+ wire \submodule.dout1[11] ;
+ wire \submodule.dout1[12] ;
+ wire \submodule.dout1[13] ;
+ wire \submodule.dout1[14] ;
+ wire \submodule.dout1[15] ;
+ wire \submodule.dout1[16] ;
+ wire \submodule.dout1[17] ;
+ wire \submodule.dout1[18] ;
+ wire \submodule.dout1[19] ;
+ wire \submodule.dout1[1] ;
+ wire \submodule.dout1[20] ;
+ wire \submodule.dout1[21] ;
+ wire \submodule.dout1[22] ;
+ wire \submodule.dout1[23] ;
+ wire \submodule.dout1[24] ;
+ wire \submodule.dout1[25] ;
+ wire \submodule.dout1[26] ;
+ wire \submodule.dout1[27] ;
+ wire \submodule.dout1[28] ;
+ wire \submodule.dout1[29] ;
+ wire \submodule.dout1[2] ;
+ wire \submodule.dout1[30] ;
+ wire \submodule.dout1[31] ;
+ wire \submodule.dout1[32] ;
+ wire \submodule.dout1[33] ;
+ wire \submodule.dout1[34] ;
+ wire \submodule.dout1[35] ;
+ wire \submodule.dout1[36] ;
+ wire \submodule.dout1[37] ;
+ wire \submodule.dout1[38] ;
+ wire \submodule.dout1[39] ;
+ wire \submodule.dout1[3] ;
+ wire \submodule.dout1[40] ;
+ wire \submodule.dout1[41] ;
+ wire \submodule.dout1[42] ;
+ wire \submodule.dout1[43] ;
+ wire \submodule.dout1[44] ;
+ wire \submodule.dout1[45] ;
+ wire \submodule.dout1[46] ;
+ wire \submodule.dout1[47] ;
+ wire \submodule.dout1[48] ;
+ wire \submodule.dout1[49] ;
+ wire \submodule.dout1[4] ;
+ wire \submodule.dout1[50] ;
+ wire \submodule.dout1[51] ;
+ wire \submodule.dout1[52] ;
+ wire \submodule.dout1[53] ;
+ wire \submodule.dout1[54] ;
+ wire \submodule.dout1[55] ;
+ wire \submodule.dout1[56] ;
+ wire \submodule.dout1[57] ;
+ wire \submodule.dout1[58] ;
+ wire \submodule.dout1[59] ;
+ wire \submodule.dout1[5] ;
+ wire \submodule.dout1[60] ;
+ wire \submodule.dout1[61] ;
+ wire \submodule.dout1[62] ;
+ wire \submodule.dout1[63] ;
+ wire \submodule.dout1[6] ;
+ wire \submodule.dout1[7] ;
+ wire \submodule.dout1[8] ;
+ wire \submodule.dout1[9] ;
+
+ sky130_fd_sc_hd__inv_2 _243_ (.A(we),
+    .Y(_001_));
+ sky130_fd_sc_hd__inv_2 _244_ (.A(cs),
+    .Y(_067_));
+ sky130_fd_sc_hd__buf_1 _245_ (.A(_067_),
+    .X(_000_));
+ sky130_fd_sc_hd__buf_1 _246_ (.A(\submodule.cs_int ),
+    .X(_068_));
+ sky130_fd_sc_hd__buf_1 _247_ (.A(_068_),
+    .X(_069_));
+ sky130_fd_sc_hd__mux2_2 _248_ (.A0(\submodule.dataout_stored[0] ),
+    .A1(\submodule.dataout_int[0] ),
+    .S(_069_),
+    .X(_070_));
+ sky130_fd_sc_hd__buf_1 _249_ (.A(_070_),
+    .X(dataout[0]));
+ sky130_fd_sc_hd__mux2_2 _250_ (.A0(\submodule.dataout_stored[1] ),
+    .A1(\submodule.dataout_int[1] ),
+    .S(_069_),
+    .X(_071_));
+ sky130_fd_sc_hd__buf_1 _251_ (.A(_071_),
+    .X(dataout[1]));
+ sky130_fd_sc_hd__mux2_2 _252_ (.A0(\submodule.dataout_stored[2] ),
+    .A1(\submodule.dataout_int[2] ),
+    .S(_069_),
+    .X(_072_));
+ sky130_fd_sc_hd__buf_1 _253_ (.A(_072_),
+    .X(dataout[2]));
+ sky130_fd_sc_hd__mux2_2 _254_ (.A0(\submodule.dataout_stored[3] ),
+    .A1(\submodule.dataout_int[3] ),
+    .S(_069_),
+    .X(_073_));
+ sky130_fd_sc_hd__buf_1 _255_ (.A(_073_),
+    .X(dataout[3]));
+ sky130_fd_sc_hd__mux2_2 _256_ (.A0(\submodule.dataout_stored[4] ),
+    .A1(\submodule.dataout_int[4] ),
+    .S(_069_),
+    .X(_074_));
+ sky130_fd_sc_hd__buf_1 _257_ (.A(_074_),
+    .X(dataout[4]));
+ sky130_fd_sc_hd__mux2_2 _258_ (.A0(\submodule.dataout_stored[5] ),
+    .A1(\submodule.dataout_int[5] ),
+    .S(_069_),
+    .X(_075_));
+ sky130_fd_sc_hd__buf_1 _259_ (.A(_075_),
+    .X(dataout[5]));
+ sky130_fd_sc_hd__mux2_2 _260_ (.A0(\submodule.dataout_stored[6] ),
+    .A1(\submodule.dataout_int[6] ),
+    .S(_069_),
+    .X(_076_));
+ sky130_fd_sc_hd__buf_1 _261_ (.A(_076_),
+    .X(dataout[6]));
+ sky130_fd_sc_hd__mux2_2 _262_ (.A0(\submodule.dataout_stored[7] ),
+    .A1(\submodule.dataout_int[7] ),
+    .S(_069_),
+    .X(_077_));
+ sky130_fd_sc_hd__buf_1 _263_ (.A(_077_),
+    .X(dataout[7]));
+ sky130_fd_sc_hd__mux2_2 _264_ (.A0(\submodule.dataout_stored[8] ),
+    .A1(\submodule.dataout_int[8] ),
+    .S(_069_),
+    .X(_078_));
+ sky130_fd_sc_hd__buf_1 _265_ (.A(_078_),
+    .X(dataout[8]));
+ sky130_fd_sc_hd__mux2_2 _266_ (.A0(\submodule.dataout_stored[9] ),
+    .A1(\submodule.dataout_int[9] ),
+    .S(_069_),
+    .X(_079_));
+ sky130_fd_sc_hd__buf_1 _267_ (.A(_079_),
+    .X(dataout[9]));
+ sky130_fd_sc_hd__buf_1 _268_ (.A(_068_),
+    .X(_080_));
+ sky130_fd_sc_hd__mux2_2 _269_ (.A0(\submodule.dataout_stored[10] ),
+    .A1(\submodule.dataout_int[10] ),
+    .S(_080_),
+    .X(_081_));
+ sky130_fd_sc_hd__buf_1 _270_ (.A(_081_),
+    .X(dataout[10]));
+ sky130_fd_sc_hd__mux2_2 _271_ (.A0(\submodule.dataout_stored[11] ),
+    .A1(\submodule.dataout_int[11] ),
+    .S(_080_),
+    .X(_082_));
+ sky130_fd_sc_hd__buf_1 _272_ (.A(_082_),
+    .X(dataout[11]));
+ sky130_fd_sc_hd__mux2_2 _273_ (.A0(\submodule.dataout_stored[12] ),
+    .A1(\submodule.dataout_int[12] ),
+    .S(_080_),
+    .X(_083_));
+ sky130_fd_sc_hd__buf_1 _274_ (.A(_083_),
+    .X(dataout[12]));
+ sky130_fd_sc_hd__mux2_2 _275_ (.A0(\submodule.dataout_stored[13] ),
+    .A1(\submodule.dataout_int[13] ),
+    .S(_080_),
+    .X(_084_));
+ sky130_fd_sc_hd__buf_1 _276_ (.A(_084_),
+    .X(dataout[13]));
+ sky130_fd_sc_hd__mux2_2 _277_ (.A0(\submodule.dataout_stored[14] ),
+    .A1(\submodule.dataout_int[14] ),
+    .S(_080_),
+    .X(_085_));
+ sky130_fd_sc_hd__buf_1 _278_ (.A(_085_),
+    .X(dataout[14]));
+ sky130_fd_sc_hd__mux2_2 _279_ (.A0(\submodule.dataout_stored[15] ),
+    .A1(\submodule.dataout_int[15] ),
+    .S(_080_),
+    .X(_086_));
+ sky130_fd_sc_hd__buf_1 _280_ (.A(_086_),
+    .X(dataout[15]));
+ sky130_fd_sc_hd__mux2_2 _281_ (.A0(\submodule.dataout_stored[16] ),
+    .A1(\submodule.dataout_int[16] ),
+    .S(_080_),
+    .X(_087_));
+ sky130_fd_sc_hd__buf_1 _282_ (.A(_087_),
+    .X(dataout[16]));
+ sky130_fd_sc_hd__mux2_2 _283_ (.A0(\submodule.dataout_stored[17] ),
+    .A1(\submodule.dataout_int[17] ),
+    .S(_080_),
+    .X(_088_));
+ sky130_fd_sc_hd__buf_1 _284_ (.A(_088_),
+    .X(dataout[17]));
+ sky130_fd_sc_hd__mux2_2 _285_ (.A0(\submodule.dataout_stored[18] ),
+    .A1(\submodule.dataout_int[18] ),
+    .S(_080_),
+    .X(_089_));
+ sky130_fd_sc_hd__buf_1 _286_ (.A(_089_),
+    .X(dataout[18]));
+ sky130_fd_sc_hd__mux2_2 _287_ (.A0(\submodule.dataout_stored[19] ),
+    .A1(\submodule.dataout_int[19] ),
+    .S(_080_),
+    .X(_090_));
+ sky130_fd_sc_hd__buf_1 _288_ (.A(_090_),
+    .X(dataout[19]));
+ sky130_fd_sc_hd__buf_1 _289_ (.A(_068_),
+    .X(_091_));
+ sky130_fd_sc_hd__mux2_2 _290_ (.A0(\submodule.dataout_stored[20] ),
+    .A1(\submodule.dataout_int[20] ),
+    .S(_091_),
+    .X(_092_));
+ sky130_fd_sc_hd__buf_1 _291_ (.A(_092_),
+    .X(dataout[20]));
+ sky130_fd_sc_hd__mux2_2 _292_ (.A0(\submodule.dataout_stored[21] ),
+    .A1(\submodule.dataout_int[21] ),
+    .S(_091_),
+    .X(_093_));
+ sky130_fd_sc_hd__buf_1 _293_ (.A(_093_),
+    .X(dataout[21]));
+ sky130_fd_sc_hd__mux2_2 _294_ (.A0(\submodule.dataout_stored[22] ),
+    .A1(\submodule.dataout_int[22] ),
+    .S(_091_),
+    .X(_094_));
+ sky130_fd_sc_hd__buf_1 _295_ (.A(_094_),
+    .X(dataout[22]));
+ sky130_fd_sc_hd__mux2_2 _296_ (.A0(\submodule.dataout_stored[23] ),
+    .A1(\submodule.dataout_int[23] ),
+    .S(_091_),
+    .X(_095_));
+ sky130_fd_sc_hd__buf_1 _297_ (.A(_095_),
+    .X(dataout[23]));
+ sky130_fd_sc_hd__mux2_2 _298_ (.A0(\submodule.dataout_stored[24] ),
+    .A1(\submodule.dataout_int[24] ),
+    .S(_091_),
+    .X(_096_));
+ sky130_fd_sc_hd__buf_1 _299_ (.A(_096_),
+    .X(dataout[24]));
+ sky130_fd_sc_hd__mux2_2 _300_ (.A0(\submodule.dataout_stored[25] ),
+    .A1(\submodule.dataout_int[25] ),
+    .S(_091_),
+    .X(_097_));
+ sky130_fd_sc_hd__buf_1 _301_ (.A(_097_),
+    .X(dataout[25]));
+ sky130_fd_sc_hd__mux2_2 _302_ (.A0(\submodule.dataout_stored[26] ),
+    .A1(\submodule.dataout_int[26] ),
+    .S(_091_),
+    .X(_098_));
+ sky130_fd_sc_hd__buf_1 _303_ (.A(_098_),
+    .X(dataout[26]));
+ sky130_fd_sc_hd__mux2_2 _304_ (.A0(\submodule.dataout_stored[27] ),
+    .A1(\submodule.dataout_int[27] ),
+    .S(_091_),
+    .X(_099_));
+ sky130_fd_sc_hd__buf_1 _305_ (.A(_099_),
+    .X(dataout[27]));
+ sky130_fd_sc_hd__mux2_2 _306_ (.A0(\submodule.dataout_stored[28] ),
+    .A1(\submodule.dataout_int[28] ),
+    .S(_091_),
+    .X(_100_));
+ sky130_fd_sc_hd__buf_1 _307_ (.A(_100_),
+    .X(dataout[28]));
+ sky130_fd_sc_hd__mux2_2 _308_ (.A0(\submodule.dataout_stored[29] ),
+    .A1(\submodule.dataout_int[29] ),
+    .S(_091_),
+    .X(_101_));
+ sky130_fd_sc_hd__buf_1 _309_ (.A(_101_),
+    .X(dataout[29]));
+ sky130_fd_sc_hd__buf_1 _310_ (.A(_068_),
+    .X(_102_));
+ sky130_fd_sc_hd__mux2_2 _311_ (.A0(\submodule.dataout_stored[30] ),
+    .A1(\submodule.dataout_int[30] ),
+    .S(_102_),
+    .X(_103_));
+ sky130_fd_sc_hd__buf_1 _312_ (.A(_103_),
+    .X(dataout[30]));
+ sky130_fd_sc_hd__mux2_2 _313_ (.A0(\submodule.dataout_stored[31] ),
+    .A1(\submodule.dataout_int[31] ),
+    .S(_102_),
+    .X(_104_));
+ sky130_fd_sc_hd__buf_1 _314_ (.A(_104_),
+    .X(dataout[31]));
+ sky130_fd_sc_hd__mux2_2 _315_ (.A0(\submodule.dataout_stored[32] ),
+    .A1(\submodule.dataout_int[32] ),
+    .S(_102_),
+    .X(_105_));
+ sky130_fd_sc_hd__buf_1 _316_ (.A(_105_),
+    .X(dataout[32]));
+ sky130_fd_sc_hd__mux2_2 _317_ (.A0(\submodule.dataout_stored[33] ),
+    .A1(\submodule.dataout_int[33] ),
+    .S(_102_),
+    .X(_106_));
+ sky130_fd_sc_hd__buf_1 _318_ (.A(_106_),
+    .X(dataout[33]));
+ sky130_fd_sc_hd__mux2_2 _319_ (.A0(\submodule.dataout_stored[34] ),
+    .A1(\submodule.dataout_int[34] ),
+    .S(_102_),
+    .X(_107_));
+ sky130_fd_sc_hd__buf_1 _320_ (.A(_107_),
+    .X(dataout[34]));
+ sky130_fd_sc_hd__mux2_2 _321_ (.A0(\submodule.dataout_stored[35] ),
+    .A1(\submodule.dataout_int[35] ),
+    .S(_102_),
+    .X(_108_));
+ sky130_fd_sc_hd__buf_1 _322_ (.A(_108_),
+    .X(dataout[35]));
+ sky130_fd_sc_hd__mux2_2 _323_ (.A0(\submodule.dataout_stored[36] ),
+    .A1(\submodule.dataout_int[36] ),
+    .S(_102_),
+    .X(_109_));
+ sky130_fd_sc_hd__buf_1 _324_ (.A(_109_),
+    .X(dataout[36]));
+ sky130_fd_sc_hd__mux2_2 _325_ (.A0(\submodule.dataout_stored[37] ),
+    .A1(\submodule.dataout_int[37] ),
+    .S(_102_),
+    .X(_110_));
+ sky130_fd_sc_hd__buf_1 _326_ (.A(_110_),
+    .X(dataout[37]));
+ sky130_fd_sc_hd__mux2_2 _327_ (.A0(\submodule.dataout_stored[38] ),
+    .A1(\submodule.dataout_int[38] ),
+    .S(_102_),
+    .X(_111_));
+ sky130_fd_sc_hd__buf_1 _328_ (.A(_111_),
+    .X(dataout[38]));
+ sky130_fd_sc_hd__mux2_2 _329_ (.A0(\submodule.dataout_stored[39] ),
+    .A1(\submodule.dataout_int[39] ),
+    .S(_102_),
+    .X(_112_));
+ sky130_fd_sc_hd__buf_1 _330_ (.A(_112_),
+    .X(dataout[39]));
+ sky130_fd_sc_hd__buf_1 _331_ (.A(_068_),
+    .X(_113_));
+ sky130_fd_sc_hd__mux2_2 _332_ (.A0(\submodule.dataout_stored[40] ),
+    .A1(\submodule.dataout_int[40] ),
+    .S(_113_),
+    .X(_114_));
+ sky130_fd_sc_hd__buf_1 _333_ (.A(_114_),
+    .X(dataout[40]));
+ sky130_fd_sc_hd__mux2_2 _334_ (.A0(\submodule.dataout_stored[41] ),
+    .A1(\submodule.dataout_int[41] ),
+    .S(_113_),
+    .X(_115_));
+ sky130_fd_sc_hd__buf_1 _335_ (.A(_115_),
+    .X(dataout[41]));
+ sky130_fd_sc_hd__mux2_2 _336_ (.A0(\submodule.dataout_stored[42] ),
+    .A1(\submodule.dataout_int[42] ),
+    .S(_113_),
+    .X(_116_));
+ sky130_fd_sc_hd__buf_1 _337_ (.A(_116_),
+    .X(dataout[42]));
+ sky130_fd_sc_hd__mux2_2 _338_ (.A0(\submodule.dataout_stored[43] ),
+    .A1(\submodule.dataout_int[43] ),
+    .S(_113_),
+    .X(_117_));
+ sky130_fd_sc_hd__buf_1 _339_ (.A(_117_),
+    .X(dataout[43]));
+ sky130_fd_sc_hd__mux2_2 _340_ (.A0(\submodule.dataout_stored[44] ),
+    .A1(\submodule.dataout_int[44] ),
+    .S(_113_),
+    .X(_118_));
+ sky130_fd_sc_hd__buf_1 _341_ (.A(_118_),
+    .X(dataout[44]));
+ sky130_fd_sc_hd__mux2_2 _342_ (.A0(\submodule.dataout_stored[45] ),
+    .A1(\submodule.dataout_int[45] ),
+    .S(_113_),
+    .X(_119_));
+ sky130_fd_sc_hd__buf_1 _343_ (.A(_119_),
+    .X(dataout[45]));
+ sky130_fd_sc_hd__mux2_2 _344_ (.A0(\submodule.dataout_stored[46] ),
+    .A1(\submodule.dataout_int[46] ),
+    .S(_113_),
+    .X(_120_));
+ sky130_fd_sc_hd__buf_1 _345_ (.A(_120_),
+    .X(dataout[46]));
+ sky130_fd_sc_hd__mux2_2 _346_ (.A0(\submodule.dataout_stored[47] ),
+    .A1(\submodule.dataout_int[47] ),
+    .S(_113_),
+    .X(_121_));
+ sky130_fd_sc_hd__buf_1 _347_ (.A(_121_),
+    .X(dataout[47]));
+ sky130_fd_sc_hd__mux2_2 _348_ (.A0(\submodule.dataout_stored[48] ),
+    .A1(\submodule.dataout_int[48] ),
+    .S(_113_),
+    .X(_122_));
+ sky130_fd_sc_hd__buf_1 _349_ (.A(_122_),
+    .X(dataout[48]));
+ sky130_fd_sc_hd__mux2_2 _350_ (.A0(\submodule.dataout_stored[49] ),
+    .A1(\submodule.dataout_int[49] ),
+    .S(_113_),
+    .X(_123_));
+ sky130_fd_sc_hd__buf_1 _351_ (.A(_123_),
+    .X(dataout[49]));
+ sky130_fd_sc_hd__buf_1 _352_ (.A(_068_),
+    .X(_124_));
+ sky130_fd_sc_hd__mux2_2 _353_ (.A0(\submodule.dataout_stored[50] ),
+    .A1(\submodule.dataout_int[50] ),
+    .S(_124_),
+    .X(_125_));
+ sky130_fd_sc_hd__buf_1 _354_ (.A(_125_),
+    .X(dataout[50]));
+ sky130_fd_sc_hd__mux2_2 _355_ (.A0(\submodule.dataout_stored[51] ),
+    .A1(\submodule.dataout_int[51] ),
+    .S(_124_),
+    .X(_126_));
+ sky130_fd_sc_hd__buf_1 _356_ (.A(_126_),
+    .X(dataout[51]));
+ sky130_fd_sc_hd__mux2_2 _357_ (.A0(\submodule.dataout_stored[52] ),
+    .A1(\submodule.dataout_int[52] ),
+    .S(_124_),
+    .X(_127_));
+ sky130_fd_sc_hd__buf_1 _358_ (.A(_127_),
+    .X(dataout[52]));
+ sky130_fd_sc_hd__mux2_2 _359_ (.A0(\submodule.dataout_stored[53] ),
+    .A1(\submodule.dataout_int[53] ),
+    .S(_124_),
+    .X(_128_));
+ sky130_fd_sc_hd__buf_1 _360_ (.A(_128_),
+    .X(dataout[53]));
+ sky130_fd_sc_hd__mux2_2 _361_ (.A0(\submodule.dataout_stored[54] ),
+    .A1(\submodule.dataout_int[54] ),
+    .S(_124_),
+    .X(_129_));
+ sky130_fd_sc_hd__buf_1 _362_ (.A(_129_),
+    .X(dataout[54]));
+ sky130_fd_sc_hd__mux2_2 _363_ (.A0(\submodule.dataout_stored[55] ),
+    .A1(\submodule.dataout_int[55] ),
+    .S(_124_),
+    .X(_130_));
+ sky130_fd_sc_hd__buf_1 _364_ (.A(_130_),
+    .X(dataout[55]));
+ sky130_fd_sc_hd__mux2_2 _365_ (.A0(\submodule.dataout_stored[56] ),
+    .A1(\submodule.dataout_int[56] ),
+    .S(_124_),
+    .X(_131_));
+ sky130_fd_sc_hd__buf_1 _366_ (.A(_131_),
+    .X(dataout[56]));
+ sky130_fd_sc_hd__mux2_2 _367_ (.A0(\submodule.dataout_stored[57] ),
+    .A1(\submodule.dataout_int[57] ),
+    .S(_124_),
+    .X(_132_));
+ sky130_fd_sc_hd__buf_1 _368_ (.A(_132_),
+    .X(dataout[57]));
+ sky130_fd_sc_hd__mux2_2 _369_ (.A0(\submodule.dataout_stored[58] ),
+    .A1(\submodule.dataout_int[58] ),
+    .S(_124_),
+    .X(_133_));
+ sky130_fd_sc_hd__buf_1 _370_ (.A(_133_),
+    .X(dataout[58]));
+ sky130_fd_sc_hd__mux2_2 _371_ (.A0(\submodule.dataout_stored[59] ),
+    .A1(\submodule.dataout_int[59] ),
+    .S(_124_),
+    .X(_134_));
+ sky130_fd_sc_hd__buf_1 _372_ (.A(_134_),
+    .X(dataout[59]));
+ sky130_fd_sc_hd__mux2_2 _373_ (.A0(\submodule.dataout_stored[60] ),
+    .A1(\submodule.dataout_int[60] ),
+    .S(_068_),
+    .X(_135_));
+ sky130_fd_sc_hd__buf_1 _374_ (.A(_135_),
+    .X(dataout[60]));
+ sky130_fd_sc_hd__mux2_2 _375_ (.A0(\submodule.dataout_stored[61] ),
+    .A1(\submodule.dataout_int[61] ),
+    .S(_068_),
+    .X(_136_));
+ sky130_fd_sc_hd__buf_1 _376_ (.A(_136_),
+    .X(dataout[61]));
+ sky130_fd_sc_hd__mux2_2 _377_ (.A0(\submodule.dataout_stored[62] ),
+    .A1(\submodule.dataout_int[62] ),
+    .S(_068_),
+    .X(_137_));
+ sky130_fd_sc_hd__buf_1 _378_ (.A(_137_),
+    .X(dataout[62]));
+ sky130_fd_sc_hd__mux2_2 _379_ (.A0(\submodule.dataout_stored[63] ),
+    .A1(\submodule.dataout_int[63] ),
+    .S(_068_),
+    .X(_138_));
+ sky130_fd_sc_hd__buf_1 _380_ (.A(_138_),
+    .X(dataout[63]));
+ sky130_fd_sc_hd__buf_1 _381_ (.A(rst_n),
+    .X(_139_));
+ sky130_fd_sc_hd__buf_1 _382_ (.A(_139_),
+    .X(_140_));
+ sky130_fd_sc_hd__buf_1 _383_ (.A(cs),
+    .X(_141_));
+ sky130_fd_sc_hd__buf_1 _384_ (.A(_141_),
+    .X(_142_));
+ sky130_fd_sc_hd__or2_2 _385_ (.A(_142_),
+    .B(\submodule.dataout_stored[1] ),
+    .X(_143_));
+ sky130_fd_sc_hd__o211a_2 _386_ (.A1(_000_),
+    .A2(\submodule.dataout_int[1] ),
+    .B1(_140_),
+    .C1(_143_),
+    .X(_002_));
+ sky130_fd_sc_hd__or2_2 _387_ (.A(_142_),
+    .B(\submodule.dataout_stored[2] ),
+    .X(_144_));
+ sky130_fd_sc_hd__o211a_2 _388_ (.A1(_000_),
+    .A2(\submodule.dataout_int[2] ),
+    .B1(_140_),
+    .C1(_144_),
+    .X(_003_));
+ sky130_fd_sc_hd__or2_2 _389_ (.A(_142_),
+    .B(\submodule.dataout_stored[3] ),
+    .X(_145_));
+ sky130_fd_sc_hd__o211a_2 _390_ (.A1(_000_),
+    .A2(\submodule.dataout_int[3] ),
+    .B1(_140_),
+    .C1(_145_),
+    .X(_004_));
+ sky130_fd_sc_hd__or2_2 _391_ (.A(_142_),
+    .B(\submodule.dataout_stored[4] ),
+    .X(_146_));
+ sky130_fd_sc_hd__o211a_2 _392_ (.A1(_000_),
+    .A2(\submodule.dataout_int[4] ),
+    .B1(_140_),
+    .C1(_146_),
+    .X(_005_));
+ sky130_fd_sc_hd__or2_2 _393_ (.A(_142_),
+    .B(\submodule.dataout_stored[5] ),
+    .X(_147_));
+ sky130_fd_sc_hd__o211a_2 _394_ (.A1(_000_),
+    .A2(\submodule.dataout_int[5] ),
+    .B1(_140_),
+    .C1(_147_),
+    .X(_006_));
+ sky130_fd_sc_hd__or2_2 _395_ (.A(_142_),
+    .B(\submodule.dataout_stored[6] ),
+    .X(_148_));
+ sky130_fd_sc_hd__o211a_2 _396_ (.A1(_000_),
+    .A2(\submodule.dataout_int[6] ),
+    .B1(_140_),
+    .C1(_148_),
+    .X(_007_));
+ sky130_fd_sc_hd__or2_2 _397_ (.A(_142_),
+    .B(\submodule.dataout_stored[7] ),
+    .X(_149_));
+ sky130_fd_sc_hd__o211a_2 _398_ (.A1(_000_),
+    .A2(\submodule.dataout_int[7] ),
+    .B1(_140_),
+    .C1(_149_),
+    .X(_008_));
+ sky130_fd_sc_hd__buf_1 _399_ (.A(_067_),
+    .X(_150_));
+ sky130_fd_sc_hd__buf_1 _400_ (.A(_150_),
+    .X(_151_));
+ sky130_fd_sc_hd__or2_2 _401_ (.A(_142_),
+    .B(\submodule.dataout_stored[8] ),
+    .X(_152_));
+ sky130_fd_sc_hd__o211a_2 _402_ (.A1(_151_),
+    .A2(\submodule.dataout_int[8] ),
+    .B1(_140_),
+    .C1(_152_),
+    .X(_009_));
+ sky130_fd_sc_hd__or2_2 _403_ (.A(_142_),
+    .B(\submodule.dataout_stored[9] ),
+    .X(_153_));
+ sky130_fd_sc_hd__o211a_2 _404_ (.A1(_151_),
+    .A2(\submodule.dataout_int[9] ),
+    .B1(_140_),
+    .C1(_153_),
+    .X(_010_));
+ sky130_fd_sc_hd__buf_1 _405_ (.A(_139_),
+    .X(_154_));
+ sky130_fd_sc_hd__or2_2 _406_ (.A(_142_),
+    .B(\submodule.dataout_stored[10] ),
+    .X(_155_));
+ sky130_fd_sc_hd__o211a_2 _407_ (.A1(_151_),
+    .A2(\submodule.dataout_int[10] ),
+    .B1(_154_),
+    .C1(_155_),
+    .X(_011_));
+ sky130_fd_sc_hd__buf_1 _408_ (.A(_141_),
+    .X(_156_));
+ sky130_fd_sc_hd__or2_2 _409_ (.A(_156_),
+    .B(\submodule.dataout_stored[11] ),
+    .X(_157_));
+ sky130_fd_sc_hd__o211a_2 _410_ (.A1(_151_),
+    .A2(\submodule.dataout_int[11] ),
+    .B1(_154_),
+    .C1(_157_),
+    .X(_012_));
+ sky130_fd_sc_hd__or2_2 _411_ (.A(_156_),
+    .B(\submodule.dataout_stored[12] ),
+    .X(_158_));
+ sky130_fd_sc_hd__o211a_2 _412_ (.A1(_151_),
+    .A2(\submodule.dataout_int[12] ),
+    .B1(_154_),
+    .C1(_158_),
+    .X(_013_));
+ sky130_fd_sc_hd__or2_2 _413_ (.A(_156_),
+    .B(\submodule.dataout_stored[13] ),
+    .X(_159_));
+ sky130_fd_sc_hd__o211a_2 _414_ (.A1(_151_),
+    .A2(\submodule.dataout_int[13] ),
+    .B1(_154_),
+    .C1(_159_),
+    .X(_014_));
+ sky130_fd_sc_hd__or2_2 _415_ (.A(_156_),
+    .B(\submodule.dataout_stored[14] ),
+    .X(_160_));
+ sky130_fd_sc_hd__o211a_2 _416_ (.A1(_151_),
+    .A2(\submodule.dataout_int[14] ),
+    .B1(_154_),
+    .C1(_160_),
+    .X(_015_));
+ sky130_fd_sc_hd__or2_2 _417_ (.A(_156_),
+    .B(\submodule.dataout_stored[15] ),
+    .X(_161_));
+ sky130_fd_sc_hd__o211a_2 _418_ (.A1(_151_),
+    .A2(\submodule.dataout_int[15] ),
+    .B1(_154_),
+    .C1(_161_),
+    .X(_016_));
+ sky130_fd_sc_hd__or2_2 _419_ (.A(_156_),
+    .B(\submodule.dataout_stored[16] ),
+    .X(_162_));
+ sky130_fd_sc_hd__o211a_2 _420_ (.A1(_151_),
+    .A2(\submodule.dataout_int[16] ),
+    .B1(_154_),
+    .C1(_162_),
+    .X(_017_));
+ sky130_fd_sc_hd__or2_2 _421_ (.A(_156_),
+    .B(\submodule.dataout_stored[17] ),
+    .X(_163_));
+ sky130_fd_sc_hd__o211a_2 _422_ (.A1(_151_),
+    .A2(\submodule.dataout_int[17] ),
+    .B1(_154_),
+    .C1(_163_),
+    .X(_018_));
+ sky130_fd_sc_hd__buf_1 _423_ (.A(_150_),
+    .X(_164_));
+ sky130_fd_sc_hd__or2_2 _424_ (.A(_156_),
+    .B(\submodule.dataout_stored[18] ),
+    .X(_165_));
+ sky130_fd_sc_hd__o211a_2 _425_ (.A1(_164_),
+    .A2(\submodule.dataout_int[18] ),
+    .B1(_154_),
+    .C1(_165_),
+    .X(_019_));
+ sky130_fd_sc_hd__or2_2 _426_ (.A(_156_),
+    .B(\submodule.dataout_stored[19] ),
+    .X(_166_));
+ sky130_fd_sc_hd__o211a_2 _427_ (.A1(_164_),
+    .A2(\submodule.dataout_int[19] ),
+    .B1(_154_),
+    .C1(_166_),
+    .X(_020_));
+ sky130_fd_sc_hd__buf_1 _428_ (.A(_139_),
+    .X(_167_));
+ sky130_fd_sc_hd__or2_2 _429_ (.A(_156_),
+    .B(\submodule.dataout_stored[20] ),
+    .X(_168_));
+ sky130_fd_sc_hd__o211a_2 _430_ (.A1(_164_),
+    .A2(\submodule.dataout_int[20] ),
+    .B1(_167_),
+    .C1(_168_),
+    .X(_021_));
+ sky130_fd_sc_hd__buf_1 _431_ (.A(_141_),
+    .X(_169_));
+ sky130_fd_sc_hd__or2_2 _432_ (.A(_169_),
+    .B(\submodule.dataout_stored[21] ),
+    .X(_170_));
+ sky130_fd_sc_hd__o211a_2 _433_ (.A1(_164_),
+    .A2(\submodule.dataout_int[21] ),
+    .B1(_167_),
+    .C1(_170_),
+    .X(_022_));
+ sky130_fd_sc_hd__or2_2 _434_ (.A(_169_),
+    .B(\submodule.dataout_stored[22] ),
+    .X(_171_));
+ sky130_fd_sc_hd__o211a_2 _435_ (.A1(_164_),
+    .A2(\submodule.dataout_int[22] ),
+    .B1(_167_),
+    .C1(_171_),
+    .X(_023_));
+ sky130_fd_sc_hd__or2_2 _436_ (.A(_169_),
+    .B(\submodule.dataout_stored[23] ),
+    .X(_172_));
+ sky130_fd_sc_hd__o211a_2 _437_ (.A1(_164_),
+    .A2(\submodule.dataout_int[23] ),
+    .B1(_167_),
+    .C1(_172_),
+    .X(_024_));
+ sky130_fd_sc_hd__or2_2 _438_ (.A(_169_),
+    .B(\submodule.dataout_stored[24] ),
+    .X(_173_));
+ sky130_fd_sc_hd__o211a_2 _439_ (.A1(_164_),
+    .A2(\submodule.dataout_int[24] ),
+    .B1(_167_),
+    .C1(_173_),
+    .X(_025_));
+ sky130_fd_sc_hd__or2_2 _440_ (.A(_169_),
+    .B(\submodule.dataout_stored[25] ),
+    .X(_174_));
+ sky130_fd_sc_hd__o211a_2 _441_ (.A1(_164_),
+    .A2(\submodule.dataout_int[25] ),
+    .B1(_167_),
+    .C1(_174_),
+    .X(_026_));
+ sky130_fd_sc_hd__or2_2 _442_ (.A(_169_),
+    .B(\submodule.dataout_stored[26] ),
+    .X(_175_));
+ sky130_fd_sc_hd__o211a_2 _443_ (.A1(_164_),
+    .A2(\submodule.dataout_int[26] ),
+    .B1(_167_),
+    .C1(_175_),
+    .X(_027_));
+ sky130_fd_sc_hd__or2_2 _444_ (.A(_169_),
+    .B(\submodule.dataout_stored[27] ),
+    .X(_176_));
+ sky130_fd_sc_hd__o211a_2 _445_ (.A1(_164_),
+    .A2(\submodule.dataout_int[27] ),
+    .B1(_167_),
+    .C1(_176_),
+    .X(_028_));
+ sky130_fd_sc_hd__buf_1 _446_ (.A(_150_),
+    .X(_177_));
+ sky130_fd_sc_hd__or2_2 _447_ (.A(_169_),
+    .B(\submodule.dataout_stored[28] ),
+    .X(_178_));
+ sky130_fd_sc_hd__o211a_2 _448_ (.A1(_177_),
+    .A2(\submodule.dataout_int[28] ),
+    .B1(_167_),
+    .C1(_178_),
+    .X(_029_));
+ sky130_fd_sc_hd__or2_2 _449_ (.A(_169_),
+    .B(\submodule.dataout_stored[29] ),
+    .X(_179_));
+ sky130_fd_sc_hd__o211a_2 _450_ (.A1(_177_),
+    .A2(\submodule.dataout_int[29] ),
+    .B1(_167_),
+    .C1(_179_),
+    .X(_030_));
+ sky130_fd_sc_hd__buf_1 _451_ (.A(_139_),
+    .X(_180_));
+ sky130_fd_sc_hd__or2_2 _452_ (.A(_169_),
+    .B(\submodule.dataout_stored[30] ),
+    .X(_181_));
+ sky130_fd_sc_hd__o211a_2 _453_ (.A1(_177_),
+    .A2(\submodule.dataout_int[30] ),
+    .B1(_180_),
+    .C1(_181_),
+    .X(_031_));
+ sky130_fd_sc_hd__buf_1 _454_ (.A(_141_),
+    .X(_182_));
+ sky130_fd_sc_hd__or2_2 _455_ (.A(_182_),
+    .B(\submodule.dataout_stored[31] ),
+    .X(_183_));
+ sky130_fd_sc_hd__o211a_2 _456_ (.A1(_177_),
+    .A2(\submodule.dataout_int[31] ),
+    .B1(_180_),
+    .C1(_183_),
+    .X(_032_));
+ sky130_fd_sc_hd__or2_2 _457_ (.A(_182_),
+    .B(\submodule.dataout_stored[32] ),
+    .X(_184_));
+ sky130_fd_sc_hd__o211a_2 _458_ (.A1(_177_),
+    .A2(\submodule.dataout_int[32] ),
+    .B1(_180_),
+    .C1(_184_),
+    .X(_033_));
+ sky130_fd_sc_hd__or2_2 _459_ (.A(_182_),
+    .B(\submodule.dataout_stored[33] ),
+    .X(_185_));
+ sky130_fd_sc_hd__o211a_2 _460_ (.A1(_177_),
+    .A2(\submodule.dataout_int[33] ),
+    .B1(_180_),
+    .C1(_185_),
+    .X(_034_));
+ sky130_fd_sc_hd__or2_2 _461_ (.A(_182_),
+    .B(\submodule.dataout_stored[34] ),
+    .X(_186_));
+ sky130_fd_sc_hd__o211a_2 _462_ (.A1(_177_),
+    .A2(\submodule.dataout_int[34] ),
+    .B1(_180_),
+    .C1(_186_),
+    .X(_035_));
+ sky130_fd_sc_hd__or2_2 _463_ (.A(_182_),
+    .B(\submodule.dataout_stored[35] ),
+    .X(_187_));
+ sky130_fd_sc_hd__o211a_2 _464_ (.A1(_177_),
+    .A2(\submodule.dataout_int[35] ),
+    .B1(_180_),
+    .C1(_187_),
+    .X(_036_));
+ sky130_fd_sc_hd__or2_2 _465_ (.A(_182_),
+    .B(\submodule.dataout_stored[36] ),
+    .X(_188_));
+ sky130_fd_sc_hd__o211a_2 _466_ (.A1(_177_),
+    .A2(\submodule.dataout_int[36] ),
+    .B1(_180_),
+    .C1(_188_),
+    .X(_037_));
+ sky130_fd_sc_hd__or2_2 _467_ (.A(_182_),
+    .B(\submodule.dataout_stored[37] ),
+    .X(_189_));
+ sky130_fd_sc_hd__o211a_2 _468_ (.A1(_177_),
+    .A2(\submodule.dataout_int[37] ),
+    .B1(_180_),
+    .C1(_189_),
+    .X(_038_));
+ sky130_fd_sc_hd__buf_1 _469_ (.A(_150_),
+    .X(_190_));
+ sky130_fd_sc_hd__or2_2 _470_ (.A(_182_),
+    .B(\submodule.dataout_stored[38] ),
+    .X(_191_));
+ sky130_fd_sc_hd__o211a_2 _471_ (.A1(_190_),
+    .A2(\submodule.dataout_int[38] ),
+    .B1(_180_),
+    .C1(_191_),
+    .X(_039_));
+ sky130_fd_sc_hd__or2_2 _472_ (.A(_182_),
+    .B(\submodule.dataout_stored[39] ),
+    .X(_192_));
+ sky130_fd_sc_hd__o211a_2 _473_ (.A1(_190_),
+    .A2(\submodule.dataout_int[39] ),
+    .B1(_180_),
+    .C1(_192_),
+    .X(_040_));
+ sky130_fd_sc_hd__buf_1 _474_ (.A(_139_),
+    .X(_193_));
+ sky130_fd_sc_hd__or2_2 _475_ (.A(_182_),
+    .B(\submodule.dataout_stored[40] ),
+    .X(_194_));
+ sky130_fd_sc_hd__o211a_2 _476_ (.A1(_190_),
+    .A2(\submodule.dataout_int[40] ),
+    .B1(_193_),
+    .C1(_194_),
+    .X(_041_));
+ sky130_fd_sc_hd__buf_1 _477_ (.A(_141_),
+    .X(_195_));
+ sky130_fd_sc_hd__or2_2 _478_ (.A(_195_),
+    .B(\submodule.dataout_stored[41] ),
+    .X(_196_));
+ sky130_fd_sc_hd__o211a_2 _479_ (.A1(_190_),
+    .A2(\submodule.dataout_int[41] ),
+    .B1(_193_),
+    .C1(_196_),
+    .X(_042_));
+ sky130_fd_sc_hd__or2_2 _480_ (.A(_195_),
+    .B(\submodule.dataout_stored[42] ),
+    .X(_197_));
+ sky130_fd_sc_hd__o211a_2 _481_ (.A1(_190_),
+    .A2(\submodule.dataout_int[42] ),
+    .B1(_193_),
+    .C1(_197_),
+    .X(_043_));
+ sky130_fd_sc_hd__or2_2 _482_ (.A(_195_),
+    .B(\submodule.dataout_stored[43] ),
+    .X(_198_));
+ sky130_fd_sc_hd__o211a_2 _483_ (.A1(_190_),
+    .A2(\submodule.dataout_int[43] ),
+    .B1(_193_),
+    .C1(_198_),
+    .X(_044_));
+ sky130_fd_sc_hd__or2_2 _484_ (.A(_195_),
+    .B(\submodule.dataout_stored[44] ),
+    .X(_199_));
+ sky130_fd_sc_hd__o211a_2 _485_ (.A1(_190_),
+    .A2(\submodule.dataout_int[44] ),
+    .B1(_193_),
+    .C1(_199_),
+    .X(_045_));
+ sky130_fd_sc_hd__or2_2 _486_ (.A(_195_),
+    .B(\submodule.dataout_stored[45] ),
+    .X(_200_));
+ sky130_fd_sc_hd__o211a_2 _487_ (.A1(_190_),
+    .A2(\submodule.dataout_int[45] ),
+    .B1(_193_),
+    .C1(_200_),
+    .X(_046_));
+ sky130_fd_sc_hd__or2_2 _488_ (.A(_195_),
+    .B(\submodule.dataout_stored[46] ),
+    .X(_201_));
+ sky130_fd_sc_hd__o211a_2 _489_ (.A1(_190_),
+    .A2(\submodule.dataout_int[46] ),
+    .B1(_193_),
+    .C1(_201_),
+    .X(_047_));
+ sky130_fd_sc_hd__or2_2 _490_ (.A(_195_),
+    .B(\submodule.dataout_stored[47] ),
+    .X(_202_));
+ sky130_fd_sc_hd__o211a_2 _491_ (.A1(_190_),
+    .A2(\submodule.dataout_int[47] ),
+    .B1(_193_),
+    .C1(_202_),
+    .X(_048_));
+ sky130_fd_sc_hd__buf_1 _492_ (.A(_067_),
+    .X(_203_));
+ sky130_fd_sc_hd__or2_2 _493_ (.A(_195_),
+    .B(\submodule.dataout_stored[48] ),
+    .X(_204_));
+ sky130_fd_sc_hd__o211a_2 _494_ (.A1(_203_),
+    .A2(\submodule.dataout_int[48] ),
+    .B1(_193_),
+    .C1(_204_),
+    .X(_049_));
+ sky130_fd_sc_hd__or2_2 _495_ (.A(_195_),
+    .B(\submodule.dataout_stored[49] ),
+    .X(_205_));
+ sky130_fd_sc_hd__o211a_2 _496_ (.A1(_203_),
+    .A2(\submodule.dataout_int[49] ),
+    .B1(_193_),
+    .C1(_205_),
+    .X(_050_));
+ sky130_fd_sc_hd__buf_1 _497_ (.A(rst_n),
+    .X(_206_));
+ sky130_fd_sc_hd__or2_2 _498_ (.A(_195_),
+    .B(\submodule.dataout_stored[50] ),
+    .X(_207_));
+ sky130_fd_sc_hd__o211a_2 _499_ (.A1(_203_),
+    .A2(\submodule.dataout_int[50] ),
+    .B1(_206_),
+    .C1(_207_),
+    .X(_051_));
+ sky130_fd_sc_hd__buf_1 _500_ (.A(_141_),
+    .X(_208_));
+ sky130_fd_sc_hd__or2_2 _501_ (.A(_208_),
+    .B(\submodule.dataout_stored[51] ),
+    .X(_209_));
+ sky130_fd_sc_hd__o211a_2 _502_ (.A1(_203_),
+    .A2(\submodule.dataout_int[51] ),
+    .B1(_206_),
+    .C1(_209_),
+    .X(_052_));
+ sky130_fd_sc_hd__or2_2 _503_ (.A(_208_),
+    .B(\submodule.dataout_stored[52] ),
+    .X(_210_));
+ sky130_fd_sc_hd__o211a_2 _504_ (.A1(_203_),
+    .A2(\submodule.dataout_int[52] ),
+    .B1(_206_),
+    .C1(_210_),
+    .X(_053_));
+ sky130_fd_sc_hd__or2_2 _505_ (.A(_208_),
+    .B(\submodule.dataout_stored[53] ),
+    .X(_211_));
+ sky130_fd_sc_hd__o211a_2 _506_ (.A1(_203_),
+    .A2(\submodule.dataout_int[53] ),
+    .B1(_206_),
+    .C1(_211_),
+    .X(_054_));
+ sky130_fd_sc_hd__or2_2 _507_ (.A(_208_),
+    .B(\submodule.dataout_stored[54] ),
+    .X(_212_));
+ sky130_fd_sc_hd__o211a_2 _508_ (.A1(_203_),
+    .A2(\submodule.dataout_int[54] ),
+    .B1(_206_),
+    .C1(_212_),
+    .X(_055_));
+ sky130_fd_sc_hd__or2_2 _509_ (.A(_208_),
+    .B(\submodule.dataout_stored[55] ),
+    .X(_213_));
+ sky130_fd_sc_hd__o211a_2 _510_ (.A1(_203_),
+    .A2(\submodule.dataout_int[55] ),
+    .B1(_206_),
+    .C1(_213_),
+    .X(_056_));
+ sky130_fd_sc_hd__or2_2 _511_ (.A(_208_),
+    .B(\submodule.dataout_stored[56] ),
+    .X(_214_));
+ sky130_fd_sc_hd__o211a_2 _512_ (.A1(_203_),
+    .A2(\submodule.dataout_int[56] ),
+    .B1(_206_),
+    .C1(_214_),
+    .X(_057_));
+ sky130_fd_sc_hd__or2_2 _513_ (.A(_208_),
+    .B(\submodule.dataout_stored[57] ),
+    .X(_215_));
+ sky130_fd_sc_hd__o211a_2 _514_ (.A1(_203_),
+    .A2(\submodule.dataout_int[57] ),
+    .B1(_206_),
+    .C1(_215_),
+    .X(_058_));
+ sky130_fd_sc_hd__or2_2 _515_ (.A(_208_),
+    .B(\submodule.dataout_stored[58] ),
+    .X(_216_));
+ sky130_fd_sc_hd__o211a_2 _516_ (.A1(_150_),
+    .A2(\submodule.dataout_int[58] ),
+    .B1(_206_),
+    .C1(_216_),
+    .X(_059_));
+ sky130_fd_sc_hd__or2_2 _517_ (.A(_208_),
+    .B(\submodule.dataout_stored[59] ),
+    .X(_217_));
+ sky130_fd_sc_hd__o211a_2 _518_ (.A1(_150_),
+    .A2(\submodule.dataout_int[59] ),
+    .B1(_206_),
+    .C1(_217_),
+    .X(_060_));
+ sky130_fd_sc_hd__or2_2 _519_ (.A(_208_),
+    .B(\submodule.dataout_stored[60] ),
+    .X(_218_));
+ sky130_fd_sc_hd__o211a_2 _520_ (.A1(_150_),
+    .A2(\submodule.dataout_int[60] ),
+    .B1(_139_),
+    .C1(_218_),
+    .X(_061_));
+ sky130_fd_sc_hd__or2_2 _521_ (.A(_141_),
+    .B(\submodule.dataout_stored[61] ),
+    .X(_219_));
+ sky130_fd_sc_hd__o211a_2 _522_ (.A1(_150_),
+    .A2(\submodule.dataout_int[61] ),
+    .B1(_139_),
+    .C1(_219_),
+    .X(_062_));
+ sky130_fd_sc_hd__or2_2 _523_ (.A(_141_),
+    .B(\submodule.dataout_stored[62] ),
+    .X(_220_));
+ sky130_fd_sc_hd__o211a_2 _524_ (.A1(_150_),
+    .A2(\submodule.dataout_int[62] ),
+    .B1(_139_),
+    .C1(_220_),
+    .X(_063_));
+ sky130_fd_sc_hd__or2_2 _525_ (.A(_141_),
+    .B(\submodule.dataout_stored[63] ),
+    .X(_221_));
+ sky130_fd_sc_hd__o211a_2 _526_ (.A1(_150_),
+    .A2(\submodule.dataout_int[63] ),
+    .B1(_139_),
+    .C1(_221_),
+    .X(_064_));
+ sky130_fd_sc_hd__nand2_2 _527_ (.A(_000_),
+    .B(_140_),
+    .Y(_065_));
+ sky130_fd_sc_hd__or2_2 _528_ (.A(\submodule.dataout_stored[0] ),
+    .B(_141_),
+    .X(_222_));
+ sky130_fd_sc_hd__o211a_2 _529_ (.A1(\submodule.dataout_int[0] ),
+    .A2(_000_),
+    .B1(_139_),
+    .C1(_222_),
+    .X(_066_));
+ sky130_fd_sc_hd__dfxtp_2 _530_ (.CLK(clk),
+    .D(_002_),
+    .Q(\submodule.dataout_stored[1] ));
+ sky130_fd_sc_hd__dfxtp_2 _531_ (.CLK(clk),
+    .D(_003_),
+    .Q(\submodule.dataout_stored[2] ));
+ sky130_fd_sc_hd__dfxtp_2 _532_ (.CLK(clk),
+    .D(_004_),
+    .Q(\submodule.dataout_stored[3] ));
+ sky130_fd_sc_hd__dfxtp_2 _533_ (.CLK(clk),
+    .D(_005_),
+    .Q(\submodule.dataout_stored[4] ));
+ sky130_fd_sc_hd__dfxtp_2 _534_ (.CLK(clk),
+    .D(_006_),
+    .Q(\submodule.dataout_stored[5] ));
+ sky130_fd_sc_hd__dfxtp_2 _535_ (.CLK(clk),
+    .D(_007_),
+    .Q(\submodule.dataout_stored[6] ));
+ sky130_fd_sc_hd__dfxtp_2 _536_ (.CLK(clk),
+    .D(_008_),
+    .Q(\submodule.dataout_stored[7] ));
+ sky130_fd_sc_hd__dfxtp_2 _537_ (.CLK(clk),
+    .D(_009_),
+    .Q(\submodule.dataout_stored[8] ));
+ sky130_fd_sc_hd__dfxtp_2 _538_ (.CLK(clk),
+    .D(_010_),
+    .Q(\submodule.dataout_stored[9] ));
+ sky130_fd_sc_hd__dfxtp_2 _539_ (.CLK(clk),
+    .D(_011_),
+    .Q(\submodule.dataout_stored[10] ));
+ sky130_fd_sc_hd__dfxtp_2 _540_ (.CLK(clk),
+    .D(_012_),
+    .Q(\submodule.dataout_stored[11] ));
+ sky130_fd_sc_hd__dfxtp_2 _541_ (.CLK(clk),
+    .D(_013_),
+    .Q(\submodule.dataout_stored[12] ));
+ sky130_fd_sc_hd__dfxtp_2 _542_ (.CLK(clk),
+    .D(_014_),
+    .Q(\submodule.dataout_stored[13] ));
+ sky130_fd_sc_hd__dfxtp_2 _543_ (.CLK(clk),
+    .D(_015_),
+    .Q(\submodule.dataout_stored[14] ));
+ sky130_fd_sc_hd__dfxtp_2 _544_ (.CLK(clk),
+    .D(_016_),
+    .Q(\submodule.dataout_stored[15] ));
+ sky130_fd_sc_hd__dfxtp_2 _545_ (.CLK(clk),
+    .D(_017_),
+    .Q(\submodule.dataout_stored[16] ));
+ sky130_fd_sc_hd__dfxtp_2 _546_ (.CLK(clk),
+    .D(_018_),
+    .Q(\submodule.dataout_stored[17] ));
+ sky130_fd_sc_hd__dfxtp_2 _547_ (.CLK(clk),
+    .D(_019_),
+    .Q(\submodule.dataout_stored[18] ));
+ sky130_fd_sc_hd__dfxtp_2 _548_ (.CLK(clk),
+    .D(_020_),
+    .Q(\submodule.dataout_stored[19] ));
+ sky130_fd_sc_hd__dfxtp_2 _549_ (.CLK(clk),
+    .D(_021_),
+    .Q(\submodule.dataout_stored[20] ));
+ sky130_fd_sc_hd__dfxtp_2 _550_ (.CLK(clk),
+    .D(_022_),
+    .Q(\submodule.dataout_stored[21] ));
+ sky130_fd_sc_hd__dfxtp_2 _551_ (.CLK(clk),
+    .D(_023_),
+    .Q(\submodule.dataout_stored[22] ));
+ sky130_fd_sc_hd__dfxtp_2 _552_ (.CLK(clk),
+    .D(_024_),
+    .Q(\submodule.dataout_stored[23] ));
+ sky130_fd_sc_hd__dfxtp_2 _553_ (.CLK(clk),
+    .D(_025_),
+    .Q(\submodule.dataout_stored[24] ));
+ sky130_fd_sc_hd__dfxtp_2 _554_ (.CLK(clk),
+    .D(_026_),
+    .Q(\submodule.dataout_stored[25] ));
+ sky130_fd_sc_hd__dfxtp_2 _555_ (.CLK(clk),
+    .D(_027_),
+    .Q(\submodule.dataout_stored[26] ));
+ sky130_fd_sc_hd__dfxtp_2 _556_ (.CLK(clk),
+    .D(_028_),
+    .Q(\submodule.dataout_stored[27] ));
+ sky130_fd_sc_hd__dfxtp_2 _557_ (.CLK(clk),
+    .D(_029_),
+    .Q(\submodule.dataout_stored[28] ));
+ sky130_fd_sc_hd__dfxtp_2 _558_ (.CLK(clk),
+    .D(_030_),
+    .Q(\submodule.dataout_stored[29] ));
+ sky130_fd_sc_hd__dfxtp_2 _559_ (.CLK(clk),
+    .D(_031_),
+    .Q(\submodule.dataout_stored[30] ));
+ sky130_fd_sc_hd__dfxtp_2 _560_ (.CLK(clk),
+    .D(_032_),
+    .Q(\submodule.dataout_stored[31] ));
+ sky130_fd_sc_hd__dfxtp_2 _561_ (.CLK(clk),
+    .D(_033_),
+    .Q(\submodule.dataout_stored[32] ));
+ sky130_fd_sc_hd__dfxtp_2 _562_ (.CLK(clk),
+    .D(_034_),
+    .Q(\submodule.dataout_stored[33] ));
+ sky130_fd_sc_hd__dfxtp_2 _563_ (.CLK(clk),
+    .D(_035_),
+    .Q(\submodule.dataout_stored[34] ));
+ sky130_fd_sc_hd__dfxtp_2 _564_ (.CLK(clk),
+    .D(_036_),
+    .Q(\submodule.dataout_stored[35] ));
+ sky130_fd_sc_hd__dfxtp_2 _565_ (.CLK(clk),
+    .D(_037_),
+    .Q(\submodule.dataout_stored[36] ));
+ sky130_fd_sc_hd__dfxtp_2 _566_ (.CLK(clk),
+    .D(_038_),
+    .Q(\submodule.dataout_stored[37] ));
+ sky130_fd_sc_hd__dfxtp_2 _567_ (.CLK(clk),
+    .D(_039_),
+    .Q(\submodule.dataout_stored[38] ));
+ sky130_fd_sc_hd__dfxtp_2 _568_ (.CLK(clk),
+    .D(_040_),
+    .Q(\submodule.dataout_stored[39] ));
+ sky130_fd_sc_hd__dfxtp_2 _569_ (.CLK(clk),
+    .D(_041_),
+    .Q(\submodule.dataout_stored[40] ));
+ sky130_fd_sc_hd__dfxtp_2 _570_ (.CLK(clk),
+    .D(_042_),
+    .Q(\submodule.dataout_stored[41] ));
+ sky130_fd_sc_hd__dfxtp_2 _571_ (.CLK(clk),
+    .D(_043_),
+    .Q(\submodule.dataout_stored[42] ));
+ sky130_fd_sc_hd__dfxtp_2 _572_ (.CLK(clk),
+    .D(_044_),
+    .Q(\submodule.dataout_stored[43] ));
+ sky130_fd_sc_hd__dfxtp_2 _573_ (.CLK(clk),
+    .D(_045_),
+    .Q(\submodule.dataout_stored[44] ));
+ sky130_fd_sc_hd__dfxtp_2 _574_ (.CLK(clk),
+    .D(_046_),
+    .Q(\submodule.dataout_stored[45] ));
+ sky130_fd_sc_hd__dfxtp_2 _575_ (.CLK(clk),
+    .D(_047_),
+    .Q(\submodule.dataout_stored[46] ));
+ sky130_fd_sc_hd__dfxtp_2 _576_ (.CLK(clk),
+    .D(_048_),
+    .Q(\submodule.dataout_stored[47] ));
+ sky130_fd_sc_hd__dfxtp_2 _577_ (.CLK(clk),
+    .D(_049_),
+    .Q(\submodule.dataout_stored[48] ));
+ sky130_fd_sc_hd__dfxtp_2 _578_ (.CLK(clk),
+    .D(_050_),
+    .Q(\submodule.dataout_stored[49] ));
+ sky130_fd_sc_hd__dfxtp_2 _579_ (.CLK(clk),
+    .D(_051_),
+    .Q(\submodule.dataout_stored[50] ));
+ sky130_fd_sc_hd__dfxtp_2 _580_ (.CLK(clk),
+    .D(_052_),
+    .Q(\submodule.dataout_stored[51] ));
+ sky130_fd_sc_hd__dfxtp_2 _581_ (.CLK(clk),
+    .D(_053_),
+    .Q(\submodule.dataout_stored[52] ));
+ sky130_fd_sc_hd__dfxtp_2 _582_ (.CLK(clk),
+    .D(_054_),
+    .Q(\submodule.dataout_stored[53] ));
+ sky130_fd_sc_hd__dfxtp_2 _583_ (.CLK(clk),
+    .D(_055_),
+    .Q(\submodule.dataout_stored[54] ));
+ sky130_fd_sc_hd__dfxtp_2 _584_ (.CLK(clk),
+    .D(_056_),
+    .Q(\submodule.dataout_stored[55] ));
+ sky130_fd_sc_hd__dfxtp_2 _585_ (.CLK(clk),
+    .D(_057_),
+    .Q(\submodule.dataout_stored[56] ));
+ sky130_fd_sc_hd__dfxtp_2 _586_ (.CLK(clk),
+    .D(_058_),
+    .Q(\submodule.dataout_stored[57] ));
+ sky130_fd_sc_hd__dfxtp_2 _587_ (.CLK(clk),
+    .D(_059_),
+    .Q(\submodule.dataout_stored[58] ));
+ sky130_fd_sc_hd__dfxtp_2 _588_ (.CLK(clk),
+    .D(_060_),
+    .Q(\submodule.dataout_stored[59] ));
+ sky130_fd_sc_hd__dfxtp_2 _589_ (.CLK(clk),
+    .D(_061_),
+    .Q(\submodule.dataout_stored[60] ));
+ sky130_fd_sc_hd__dfxtp_2 _590_ (.CLK(clk),
+    .D(_062_),
+    .Q(\submodule.dataout_stored[61] ));
+ sky130_fd_sc_hd__dfxtp_2 _591_ (.CLK(clk),
+    .D(_063_),
+    .Q(\submodule.dataout_stored[62] ));
+ sky130_fd_sc_hd__dfxtp_2 _592_ (.CLK(clk),
+    .D(_064_),
+    .Q(\submodule.dataout_stored[63] ));
+ sky130_fd_sc_hd__dfxtp_2 _593_ (.CLK(clk),
+    .D(_065_),
+    .Q(\submodule.cs_int ));
+ sky130_fd_sc_hd__dfxtp_2 _594_ (.CLK(clk),
+    .D(_066_),
+    .Q(\submodule.dataout_stored[0] ));
+ sky130_fd_sc_hd__conb_1 _595_ (.HI(_223_));
+ sky130_fd_sc_hd__conb_1 _596_ (.HI(_224_));
+ sky130_fd_sc_hd__conb_1 _597_ (.LO(_225_));
+ sky130_fd_sc_hd__conb_1 _598_ (.LO(_226_));
+ sky130_fd_sc_hd__conb_1 _599_ (.LO(_227_));
+ sky130_fd_sc_hd__conb_1 _600_ (.LO(_228_));
+ sky130_fd_sc_hd__conb_1 _601_ (.LO(_229_));
+ sky130_fd_sc_hd__conb_1 _602_ (.LO(_230_));
+ sky130_fd_sc_hd__conb_1 _603_ (.LO(_231_));
+ sky130_fd_sc_hd__conb_1 _604_ (.LO(_232_));
+ sky130_fd_sc_hd__conb_1 _605_ (.LO(_233_));
+ sky130_fd_sc_hd__conb_1 _606_ (.LO(_234_));
+ sky130_fd_sc_hd__conb_1 _607_ (.LO(_235_));
+ sky130_fd_sc_hd__conb_1 _608_ (.LO(_236_));
+ sky130_fd_sc_hd__conb_1 _609_ (.LO(_237_));
+ sky130_fd_sc_hd__conb_1 _610_ (.LO(_238_));
+ sky130_fd_sc_hd__conb_1 _611_ (.LO(_239_));
+ sky130_fd_sc_hd__conb_1 _612_ (.LO(_240_));
+ sky130_fd_sc_hd__conb_1 _613_ (.LO(_241_));
+ sky130_fd_sc_hd__conb_1 _614_ (.LO(_242_));
+ sky130_sram_1kbyte_1rw1r_32x256_8 \submodule.sram0  (.csb0(_000_),
+    .csb1(_223_),
+    .web0(_001_),
+    .clk0(clk),
+    .clk1(_233_),
+    .addr0({addr[7],
+    addr[6],
+    addr[5],
+    addr[4],
+    addr[3],
+    addr[2],
+    addr[1],
+    addr[0]}),
+    .addr1({_232_,
+    _231_,
+    _230_,
+    _229_,
+    _228_,
+    _227_,
+    _226_,
+    _225_}),
+    .din0({datain[31],
+    datain[30],
+    datain[29],
+    datain[28],
+    datain[27],
+    datain[26],
+    datain[25],
+    datain[24],
+    datain[23],
+    datain[22],
+    datain[21],
+    datain[20],
+    datain[19],
+    datain[18],
+    datain[17],
+    datain[16],
+    datain[15],
+    datain[14],
+    datain[13],
+    datain[12],
+    datain[11],
+    datain[10],
+    datain[9],
+    datain[8],
+    datain[7],
+    datain[6],
+    datain[5],
+    datain[4],
+    datain[3],
+    datain[2],
+    datain[1],
+    datain[0]}),
+    .dout0({\submodule.dataout_int[31] ,
+    \submodule.dataout_int[30] ,
+    \submodule.dataout_int[29] ,
+    \submodule.dataout_int[28] ,
+    \submodule.dataout_int[27] ,
+    \submodule.dataout_int[26] ,
+    \submodule.dataout_int[25] ,
+    \submodule.dataout_int[24] ,
+    \submodule.dataout_int[23] ,
+    \submodule.dataout_int[22] ,
+    \submodule.dataout_int[21] ,
+    \submodule.dataout_int[20] ,
+    \submodule.dataout_int[19] ,
+    \submodule.dataout_int[18] ,
+    \submodule.dataout_int[17] ,
+    \submodule.dataout_int[16] ,
+    \submodule.dataout_int[15] ,
+    \submodule.dataout_int[14] ,
+    \submodule.dataout_int[13] ,
+    \submodule.dataout_int[12] ,
+    \submodule.dataout_int[11] ,
+    \submodule.dataout_int[10] ,
+    \submodule.dataout_int[9] ,
+    \submodule.dataout_int[8] ,
+    \submodule.dataout_int[7] ,
+    \submodule.dataout_int[6] ,
+    \submodule.dataout_int[5] ,
+    \submodule.dataout_int[4] ,
+    \submodule.dataout_int[3] ,
+    \submodule.dataout_int[2] ,
+    \submodule.dataout_int[1] ,
+    \submodule.dataout_int[0] }),
+    .dout1({\submodule.dout1[31] ,
+    \submodule.dout1[30] ,
+    \submodule.dout1[29] ,
+    \submodule.dout1[28] ,
+    \submodule.dout1[27] ,
+    \submodule.dout1[26] ,
+    \submodule.dout1[25] ,
+    \submodule.dout1[24] ,
+    \submodule.dout1[23] ,
+    \submodule.dout1[22] ,
+    \submodule.dout1[21] ,
+    \submodule.dout1[20] ,
+    \submodule.dout1[19] ,
+    \submodule.dout1[18] ,
+    \submodule.dout1[17] ,
+    \submodule.dout1[16] ,
+    \submodule.dout1[15] ,
+    \submodule.dout1[14] ,
+    \submodule.dout1[13] ,
+    \submodule.dout1[12] ,
+    \submodule.dout1[11] ,
+    \submodule.dout1[10] ,
+    \submodule.dout1[9] ,
+    \submodule.dout1[8] ,
+    \submodule.dout1[7] ,
+    \submodule.dout1[6] ,
+    \submodule.dout1[5] ,
+    \submodule.dout1[4] ,
+    \submodule.dout1[3] ,
+    \submodule.dout1[2] ,
+    \submodule.dout1[1] ,
+    \submodule.dout1[0] }),
+    .wmask0({write_allow[3],
+    write_allow[2],
+    write_allow[1],
+    write_allow[0]}));
+ sky130_sram_1kbyte_1rw1r_32x256_8 \submodule.sram1  (.csb0(_000_),
+    .csb1(_224_),
+    .web0(_001_),
+    .clk0(clk),
+    .clk1(_242_),
+    .addr0({addr[7],
+    addr[6],
+    addr[5],
+    addr[4],
+    addr[3],
+    addr[2],
+    addr[1],
+    addr[0]}),
+    .addr1({_241_,
+    _240_,
+    _239_,
+    _238_,
+    _237_,
+    _236_,
+    _235_,
+    _234_}),
+    .din0({datain[63],
+    datain[62],
+    datain[61],
+    datain[60],
+    datain[59],
+    datain[58],
+    datain[57],
+    datain[56],
+    datain[55],
+    datain[54],
+    datain[53],
+    datain[52],
+    datain[51],
+    datain[50],
+    datain[49],
+    datain[48],
+    datain[47],
+    datain[46],
+    datain[45],
+    datain[44],
+    datain[43],
+    datain[42],
+    datain[41],
+    datain[40],
+    datain[39],
+    datain[38],
+    datain[37],
+    datain[36],
+    datain[35],
+    datain[34],
+    datain[33],
+    datain[32]}),
+    .dout0({\submodule.dataout_int[63] ,
+    \submodule.dataout_int[62] ,
+    \submodule.dataout_int[61] ,
+    \submodule.dataout_int[60] ,
+    \submodule.dataout_int[59] ,
+    \submodule.dataout_int[58] ,
+    \submodule.dataout_int[57] ,
+    \submodule.dataout_int[56] ,
+    \submodule.dataout_int[55] ,
+    \submodule.dataout_int[54] ,
+    \submodule.dataout_int[53] ,
+    \submodule.dataout_int[52] ,
+    \submodule.dataout_int[51] ,
+    \submodule.dataout_int[50] ,
+    \submodule.dataout_int[49] ,
+    \submodule.dataout_int[48] ,
+    \submodule.dataout_int[47] ,
+    \submodule.dataout_int[46] ,
+    \submodule.dataout_int[45] ,
+    \submodule.dataout_int[44] ,
+    \submodule.dataout_int[43] ,
+    \submodule.dataout_int[42] ,
+    \submodule.dataout_int[41] ,
+    \submodule.dataout_int[40] ,
+    \submodule.dataout_int[39] ,
+    \submodule.dataout_int[38] ,
+    \submodule.dataout_int[37] ,
+    \submodule.dataout_int[36] ,
+    \submodule.dataout_int[35] ,
+    \submodule.dataout_int[34] ,
+    \submodule.dataout_int[33] ,
+    \submodule.dataout_int[32] }),
+    .dout1({\submodule.dout1[63] ,
+    \submodule.dout1[62] ,
+    \submodule.dout1[61] ,
+    \submodule.dout1[60] ,
+    \submodule.dout1[59] ,
+    \submodule.dout1[58] ,
+    \submodule.dout1[57] ,
+    \submodule.dout1[56] ,
+    \submodule.dout1[55] ,
+    \submodule.dout1[54] ,
+    \submodule.dout1[53] ,
+    \submodule.dout1[52] ,
+    \submodule.dout1[51] ,
+    \submodule.dout1[50] ,
+    \submodule.dout1[49] ,
+    \submodule.dout1[48] ,
+    \submodule.dout1[47] ,
+    \submodule.dout1[46] ,
+    \submodule.dout1[45] ,
+    \submodule.dout1[44] ,
+    \submodule.dout1[43] ,
+    \submodule.dout1[42] ,
+    \submodule.dout1[41] ,
+    \submodule.dout1[40] ,
+    \submodule.dout1[39] ,
+    \submodule.dout1[38] ,
+    \submodule.dout1[37] ,
+    \submodule.dout1[36] ,
+    \submodule.dout1[35] ,
+    \submodule.dout1[34] ,
+    \submodule.dout1[33] ,
+    \submodule.dout1[32] }),
+    .wmask0({write_allow[7],
+    write_allow[6],
+    write_allow[5],
+    write_allow[4]}));
+endmodule

@@ -1,0 +1,38 @@
+Sat Feb 03 09:40:23 UTC 2024 - Executing "{openroad -exit -no_init -python /openlane/scripts/odbpy/lefutil.py get_metal_layers -o /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/layers.list /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef}"
+
+Sat Feb 03 09:40:24 UTC 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/merged.nom.lef -i /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null}"
+
+Sat Feb 03 09:40:24 UTC 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/merged.min.lef -i /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null}"
+
+Sat Feb 03 09:40:25 UTC 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/merged.max.lef -i /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null}"
+
+Sat Feb 03 09:40:25 UTC 2024 - Executing "{python3 /openlane/scripts/mergeLib.py --output /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/synthesis/merged.lib --name sky130A_merged /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib}"
+
+Sat Feb 03 09:40:26 UTC 2024 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/synthesis/trimmed.lib.exclude.list --output /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/synthesis/trimmed.lib /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/synthesis/merged.lib}"
+
+Sat Feb 03 09:40:26 UTC 2024 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/cts/cts.lib.exclude.list --output /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/cts/cts.lib /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib}"
+
+Sat Feb 03 09:40:27 UTC 2024 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/cts/cts-fastest.lib.exclude.list --output /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/cts/cts-fastest.lib /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib}"
+
+Sat Feb 03 09:40:35 UTC 2024 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/cts/cts-slowest.lib.exclude.list --output /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/cts/cts-slowest.lib /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib}"
+
+Sat Feb 03 09:40:36 UTC 2024 - Executing "{python3 /openlane/scripts/new_tracks.py -i /home/vignesh/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/routing/config.tracks}"
+
+Sat Feb 03 09:40:36 UTC 2024 - Executing "{echo {OpenLane d8b353fb1631d4f02afd91e9fc9c7498e9a8f699} > /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/OPENLANE_VERSION}"
+
+Sat Feb 03 09:43:00 UTC 2024 - Executing "{sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib}"
+
+Sat Feb 03 09:43:01 UTC 2024 - Executing "{sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/synthesis/trimmed.lib > /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/tmp/synthesis/1-trimmed.no_pg.lib}"
+
+Sat Feb 03 09:43:01 UTC 2024 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl |& tee /dev/null /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/logs/synthesis/1-synthesis.log"
+
+Sat Feb 03 09:43:01 UTC 2024 - Executing "{yosys -c /openlane/scripts/yosys/synth.tcl |& tee /dev/null /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/logs/synthesis/1-synthesis.log}"
+
+Sat Feb 03 09:44:53 UTC 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/designs\/ci\/picorv32_base\/runs\/RUN_2024.02.03_09.40.22\/results\/synthesis\/picorv32_base.v/} /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/config.tcl}"
+
+Sat Feb 03 09:44:53 UTC 2024 - Executing "{sed -i.bak /defparam/d /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/results/synthesis/picorv32_base.v}"
+
+Sat Feb 03 09:44:55 UTC 2024 - Executing "sta -exit -no_init /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/logs/synthesis/2-sta.log"
+
+Sat Feb 03 09:44:55 UTC 2024 - Executing "{sta -exit -no_init /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.40.22/logs/synthesis/2-sta.log}"
+

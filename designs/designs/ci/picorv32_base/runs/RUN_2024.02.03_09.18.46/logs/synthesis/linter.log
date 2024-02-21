@@ -1,0 +1,10 @@
+%Error: Cannot find file containing module: /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/src/*.v
+%Error: This may be because there's no search path specified with -I<dir>.
+        ... Looked in:
+             /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/src/*.v
+             /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/src/*.v.v
+             /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/src/*.v.sv
+             obj_dir//home/vignesh/OpenLane/designs/designs/ci/picorv32_base/src/*.v
+             obj_dir//home/vignesh/OpenLane/designs/designs/ci/picorv32_base/src/*.v.v
+             obj_dir//home/vignesh/OpenLane/designs/designs/ci/picorv32_base/src/*.v.sv
+%Error: Exiting due to 2 error(s)

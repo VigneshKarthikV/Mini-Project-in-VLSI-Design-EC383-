@@ -1,0 +1,22 @@
+Sat Feb 03 10:07:55 UTC 2024 - Executing "{openroad -exit -no_init -python /openlane/scripts/odbpy/lefutil.py get_metal_layers -o /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.07.54/tmp/layers.list /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef}"
+
+Sat Feb 03 10:07:56 UTC 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.07.54/tmp/merged.nom.lef -i /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null}"
+
+Sat Feb 03 10:07:56 UTC 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.07.54/tmp/merged.nom.lef -i /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.07.54/tmp/merged.nom.lef /home/vignesh/.volare/sky130B/libs.ref/sky130_sram_macros/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef |& tee /dev/null}"
+
+Sat Feb 03 10:07:56 UTC 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.07.54/tmp/merged.min.lef -i /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null}"
+
+Sat Feb 03 10:07:56 UTC 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.07.54/tmp/merged.min.lef -i /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.07.54/tmp/merged.min.lef /home/vignesh/.volare/sky130B/libs.ref/sky130_sram_macros/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef |& tee /dev/null}"
+
+Sat Feb 03 10:07:56 UTC 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.07.54/tmp/merged.max.lef -i /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null}"
+
+Sat Feb 03 10:07:57 UTC 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.07.54/tmp/merged.max.lef -i /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.07.54/tmp/merged.max.lef /home/vignesh/.volare/sky130B/libs.ref/sky130_sram_macros/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef |& tee /dev/null}"
+
+Sat Feb 03 10:07:57 UTC 2024 - Executing "{python3 /openlane/scripts/mergeLib.py --output /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.07.54/tmp/synthesis/merged.lib --name sky130A_merged /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib}"
+
+Sat Feb 03 10:07:57 UTC 2024 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.07.54/tmp/synthesis/trimmed.lib.exclude.list --output /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.07.54/tmp/synthesis/trimmed.lib /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.07.54/tmp/synthesis/merged.lib}"
+
+Sat Feb 03 10:07:58 UTC 2024 - Executing "{python3 /openlane/scripts/new_tracks.py -i /home/vignesh/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.07.54/tmp/routing/config.tracks}"
+
+Sat Feb 03 10:07:58 UTC 2024 - Executing "{echo {OpenLane d8b353fb1631d4f02afd91e9fc9c7498e9a8f699} > /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.07.54/OPENLANE_VERSION}"
+

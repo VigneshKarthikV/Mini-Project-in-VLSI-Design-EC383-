@@ -1,0 +1,158 @@
+Sat Feb 03 09:21:59 UTC 2024 - Executing "{openroad -exit -no_init -python /home/vignesh/OpenLane/scripts/odbpy/lefutil.py get_metal_layers -o /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/layers.list /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef}"
+
+Sat Feb 03 09:21:59 UTC 2024 - Executing "{/home/vignesh/OpenLane/scripts/mergeLef.py -o /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/merged.nom.lef -i /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null}"
+
+Sat Feb 03 09:21:59 UTC 2024 - Executing "{/home/vignesh/OpenLane/scripts/mergeLef.py -o /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/merged.min.lef -i /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null}"
+
+Sat Feb 03 09:21:59 UTC 2024 - Executing "{/home/vignesh/OpenLane/scripts/mergeLef.py -o /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/merged.max.lef -i /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null}"
+
+Sat Feb 03 09:22:00 UTC 2024 - Executing "{python3 /home/vignesh/OpenLane/scripts/mergeLib.py --output /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/synthesis/merged.lib --name sky130A_merged /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib}"
+
+Sat Feb 03 09:22:00 UTC 2024 - Executing "{python3 /home/vignesh/OpenLane/scripts/libtrim.py --cell-file /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/synthesis/trimmed.lib.exclude.list --output /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/synthesis/trimmed.lib /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/synthesis/merged.lib}"
+
+Sat Feb 03 09:22:00 UTC 2024 - Executing "{python3 /home/vignesh/OpenLane/scripts/libtrim.py --cell-file /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/cts/cts.lib.exclude.list --output /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/cts/cts.lib /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib}"
+
+Sat Feb 03 09:22:01 UTC 2024 - Executing "{python3 /home/vignesh/OpenLane/scripts/libtrim.py --cell-file /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/cts/cts-fastest.lib.exclude.list --output /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/cts/cts-fastest.lib /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib}"
+
+Sat Feb 03 09:22:06 UTC 2024 - Executing "{python3 /home/vignesh/OpenLane/scripts/libtrim.py --cell-file /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/cts/cts-slowest.lib.exclude.list --output /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/cts/cts-slowest.lib /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib}"
+
+Sat Feb 03 09:22:07 UTC 2024 - Executing "{python3 /home/vignesh/OpenLane/scripts/new_tracks.py -i /home/vignesh/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/routing/config.tracks}"
+
+Sat Feb 03 09:22:07 UTC 2024 - Executing "{echo {OpenLane d8b353fb1631d4f02afd91e9fc9c7498e9a8f699} > /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/OPENLANE_VERSION}"
+
+Sat Feb 03 09:22:07 UTC 2024 - Executing "{yosys -c /home/vignesh/OpenLane/scripts/yosys/blackbox.tcl}"
+
+Sat Feb 03 09:22:07 UTC 2024 - Executing "{verilator -Wall --lint-only --Wno-DECLFILENAME --top-module picorv32_base /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/synthesis/blackbox/sky130_fd_sc_hd__blackbox.v /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/src/picorv32_base.v -Wno-fatal --relative-includes |& tee /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/synthesis/linter.log /dev/null}"
+
+Sat Feb 03 09:22:08 UTC 2024 - Executing "{sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib}"
+
+Sat Feb 03 09:22:08 UTC 2024 - Executing "{sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/synthesis/trimmed.lib > /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/synthesis/1-trimmed.no_pg.lib}"
+
+Sat Feb 03 09:22:08 UTC 2024 - Executing "yosys -c /home/vignesh/OpenLane/scripts/yosys/synth.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/synthesis/1-synthesis.log"
+
+Sat Feb 03 09:22:08 UTC 2024 - Executing "{yosys -c /home/vignesh/OpenLane/scripts/yosys/synth.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/synthesis/1-synthesis.log}"
+
+Sat Feb 03 09:23:16 UTC 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/vignesh\/OpenLane\/designs\/designs\/ci\/picorv32_base\/runs\/RUN_2024.02.03_09.21.58\/results\/synthesis\/picorv32_base.v/} /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/config.tcl}"
+
+Sat Feb 03 09:23:16 UTC 2024 - Executing "{sed -i.bak /defparam/d /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/results/synthesis/picorv32_base.v}"
+
+Sat Feb 03 09:23:16 UTC 2024 - Executing "sta -exit -no_init /home/vignesh/OpenLane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/synthesis/2-sta.log"
+
+Sat Feb 03 09:23:16 UTC 2024 - Executing "{sta -exit -no_init /home/vignesh/OpenLane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/synthesis/2-sta.log}"
+
+Sat Feb 03 09:23:20 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/floorplan.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/floorplan/3-initial_fp.log"
+
+Sat Feb 03 09:23:20 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/floorplan.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/floorplan/3-initial_fp.log}"
+
+Sat Feb 03 09:23:22 UTC 2024 - Executing "{openroad -exit -no_init -python /home/vignesh/OpenLane/scripts/odbpy/defutil.py extract_core_dims --output-data /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/dimensions.txt --input-lef /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/merged.nom.lef /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/tmp/floorplan/3-initial_fp.def}"
+
+Sat Feb 03 09:23:22 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/ioplacer.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/floorplan/4-io.log"
+
+Sat Feb 03 09:23:22 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/ioplacer.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/floorplan/4-io.log}"
+
+Sat Feb 03 09:23:24 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/tapcell.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/floorplan/5-tap.log"
+
+Sat Feb 03 09:23:24 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/tapcell.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/floorplan/5-tap.log}"
+
+Sat Feb 03 09:23:25 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/pdn.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/floorplan/6-pdn.log"
+
+Sat Feb 03 09:23:25 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/pdn.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/floorplan/6-pdn.log}"
+
+Sat Feb 03 09:23:28 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/gpl.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/placement/6-global_skip_io.log"
+
+Sat Feb 03 09:23:28 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/gpl.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/placement/6-global_skip_io.log}"
+
+Sat Feb 03 09:23:40 UTC 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/vignesh\/OpenLane\/designs\/designs\/ci\/picorv32_base\/runs\/RUN_2024.02.03_09.21.58\/tmp\/placement\/7-global_skip_io.nl.v/} /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/config.tcl}"
+
+Sat Feb 03 09:23:41 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/placement/8-gpl_sta.log"
+
+Sat Feb 03 09:23:41 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/placement/8-gpl_sta.log}"
+
+Sat Feb 03 09:23:49 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/ioplacer.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/placement/9-io.log"
+
+Sat Feb 03 09:23:49 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/ioplacer.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/placement/9-io.log}"
+
+Sat Feb 03 09:23:51 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/gpl.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/placement/9-global.log"
+
+Sat Feb 03 09:23:51 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/gpl.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/placement/9-global.log}"
+
+Sat Feb 03 09:24:01 UTC 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/vignesh\/OpenLane\/designs\/designs\/ci\/picorv32_base\/runs\/RUN_2024.02.03_09.21.58\/tmp\/placement\/10-global.nl.v/} /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/config.tcl}"
+
+Sat Feb 03 09:24:01 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/placement/11-gpl_sta.log"
+
+Sat Feb 03 09:24:01 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/placement/11-gpl_sta.log}"
+
+Sat Feb 03 09:24:09 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/resizer.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/placement/12-resizer.log"
+
+Sat Feb 03 09:24:09 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/resizer.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/placement/12-resizer.log}"
+
+Sat Feb 03 09:24:32 UTC 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/vignesh\/OpenLane\/designs\/designs\/ci\/picorv32_base\/runs\/RUN_2024.02.03_09.21.58\/tmp\/placement\/12-resizer.nl.v/} /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/config.tcl}"
+
+Sat Feb 03 09:24:32 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/dpl.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/placement/13-detailed.log"
+
+Sat Feb 03 09:24:32 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/dpl.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/placement/13-detailed.log}"
+
+Sat Feb 03 09:24:34 UTC 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/vignesh\/OpenLane\/designs\/designs\/ci\/picorv32_base\/runs\/RUN_2024.02.03_09.21.58\/results\/placement\/picorv32_base.nl.v/} /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/config.tcl}"
+
+Sat Feb 03 09:24:34 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/placement/14-dpl_sta.log"
+
+Sat Feb 03 09:24:34 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/placement/14-dpl_sta.log}"
+
+Sat Feb 03 09:24:40 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/cts.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/cts/15-cts.log"
+
+Sat Feb 03 09:24:40 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/cts.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/cts/15-cts.log}"
+
+Sat Feb 03 09:24:57 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/cts/16-cts_sta.log"
+
+Sat Feb 03 09:24:57 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/cts/16-cts_sta.log}"
+
+Sat Feb 03 09:25:05 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/resizer_timing.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/cts/17-resizer.log"
+
+Sat Feb 03 09:25:05 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/resizer_timing.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/cts/17-resizer.log}"
+
+Sat Feb 03 09:26:05 UTC 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/vignesh\/OpenLane\/designs\/designs\/ci\/picorv32_base\/runs\/RUN_2024.02.03_09.21.58\/tmp\/cts\/17-picorv32_base.resized.nl.v/} /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/config.tcl}"
+
+Sat Feb 03 09:26:05 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/resizer_routing_design.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/18-resizer_design.log"
+
+Sat Feb 03 09:26:05 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/resizer_routing_design.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/18-resizer_design.log}"
+
+Sat Feb 03 09:26:42 UTC 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/vignesh\/OpenLane\/designs\/designs\/ci\/picorv32_base\/runs\/RUN_2024.02.03_09.21.58\/tmp\/18-picorv32_base.nl.v/} /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/config.tcl}"
+
+Sat Feb 03 09:26:43 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/19-rsz_design_sta.log"
+
+Sat Feb 03 09:26:43 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/19-rsz_design_sta.log}"
+
+Sat Feb 03 09:26:52 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/resizer_routing_timing.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/20-resizer_timing.log"
+
+Sat Feb 03 09:26:53 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/resizer_routing_timing.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/20-resizer_timing.log}"
+
+Sat Feb 03 09:27:26 UTC 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/vignesh\/OpenLane\/designs\/designs\/ci\/picorv32_base\/runs\/RUN_2024.02.03_09.21.58\/tmp\/20-picorv32_base.nl.v/} /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/config.tcl}"
+
+Sat Feb 03 09:27:26 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/21-rsz_timing_sta.log"
+
+Sat Feb 03 09:27:26 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/21-rsz_timing_sta.log}"
+
+Sat Feb 03 09:27:37 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/repair_antennas.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/22-global.log"
+
+Sat Feb 03 09:27:37 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/repair_antennas.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/22-global.log}"
+
+Sat Feb 03 09:28:22 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/write_views.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/22-global_write_netlist.log"
+
+Sat Feb 03 09:28:22 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/write_views.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/22-global_write_netlist.log}"
+
+Sat Feb 03 09:28:24 UTC 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/vignesh\/OpenLane\/designs\/designs\/ci\/picorv32_base\/runs\/RUN_2024.02.03_09.21.58\/tmp\/routing\/global.nl.v/} /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/config.tcl}"
+
+Sat Feb 03 09:28:24 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/24-grt_sta.log"
+
+Sat Feb 03 09:28:24 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/24-grt_sta.log}"
+
+Sat Feb 03 09:28:32 UTC 2024 - Executing "openroad -exit /home/vignesh/OpenLane/scripts/openroad/fill.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/25-fill.log"
+
+Sat Feb 03 09:28:32 UTC 2024 - Executing "{openroad -exit /home/vignesh/OpenLane/scripts/openroad/fill.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/25-fill.log}"
+
+Sat Feb 03 09:28:34 UTC 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/vignesh\/OpenLane\/designs\/designs\/ci\/picorv32_base\/runs\/RUN_2024.02.03_09.21.58\/tmp\/routing\/25-fill.nl.v/} /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/config.tcl}"
+
+Sat Feb 03 09:28:35 UTC 2024 - Executing "openroad -exit -metrics /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/reports/routing/26-drt_metrics.json /home/vignesh/OpenLane/scripts/openroad/droute.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/26-detailed.log"
+
+Sat Feb 03 09:28:35 UTC 2024 - Executing "{openroad -exit -metrics /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/reports/routing/26-drt_metrics.json /home/vignesh/OpenLane/scripts/openroad/droute.tcl |& tee /dev/null /home/vignesh/OpenLane/designs/designs/ci/picorv32_base/runs/RUN_2024.02.03_09.21.58/logs/routing/26-detailed.log}"
+

@@ -1,0 +1,7 @@
+[WARNING]: The variable name DESIGN_IS_CORE was renamed to FP_PDN_MULTILAYER. Update your configuration file.
+[WARNING]: PNR_SDC_FILE is not set. It is recommended to write a custom SDC file for the design. Defaulting to BASE_SDC_FILE
+[WARNING]: SIGNOFF_SDC_FILE is not set. It is recommended to write a custom SDC file for the design. Defaulting to BASE_SDC_FILE
+[WARNING]: A netlist at /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.58.21/results/synthesis/test_sram_macro.v already exists. Synthesis will be skipped.
+[WARNING]: The -output_verilog option of write_powered_verilog is deprecated.
+[WARNING]: Update your invocation to:
+[WARNING]:     write_powered_verilog -output_nl <UNPOWERED_NETLIST> -output_pnl <POWERED_NETLIST>

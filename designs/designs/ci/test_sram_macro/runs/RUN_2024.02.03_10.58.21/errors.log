@@ -1,0 +1,4 @@
+[ERROR]: write_powered_verilog missing required -output_def
+[ERROR]: write_powered_verilog missing required -output_def
+[ERROR]: write_powered_verilog missing required -output_def
+[ERROR]: -output_nl is required for write_powered_verilog.

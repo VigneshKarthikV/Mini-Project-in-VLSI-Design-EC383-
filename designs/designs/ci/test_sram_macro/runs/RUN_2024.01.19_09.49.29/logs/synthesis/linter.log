@@ -1,8 +1,0 @@
-%Warning-EOFNEWLINE: /openlane/designs/designs/ci/test_sram_macro/src/test_sram_macro.v:77:10: Missing newline at end of file (POSIX 3.206).
-                                                                                             : ... Suggest add newline.
-   77 | endmodule
-      |          ^
-                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.018
-                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
-%Error: Specified --top-module './designs/ci/test_sram_macro' was not found in design.
-%Error: Exiting due to 1 error(s)

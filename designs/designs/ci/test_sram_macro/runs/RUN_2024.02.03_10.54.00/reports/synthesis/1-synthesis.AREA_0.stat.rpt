@@ -1,0 +1,25 @@
+
+63. Printing statistics.
+
+=== test_sram_macro ===
+
+   Number of wires:                444
+   Number of wire bits:            584
+   Number of public wires:         201
+   Number of public wire bits:     341
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                374
+     sky130_fd_sc_hd__buf_1         92
+     sky130_fd_sc_hd__conb_1        20
+     sky130_fd_sc_hd__dfxtp_2       65
+     sky130_fd_sc_hd__inv_2          2
+     sky130_fd_sc_hd__mux2_2        64
+     sky130_fd_sc_hd__nand2_2        1
+     sky130_fd_sc_hd__o211a_2       64
+     sky130_fd_sc_hd__or2_2         64
+     sky130_sram_1kbyte_1rw1r_32x256_8      2
+
+   Chip area for module '\test_sram_macro': 385003.532000
+

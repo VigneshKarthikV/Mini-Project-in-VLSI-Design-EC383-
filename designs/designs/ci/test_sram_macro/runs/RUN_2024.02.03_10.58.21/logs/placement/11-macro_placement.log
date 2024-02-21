@@ -1,0 +1,9 @@
+OpenROAD 75f2f325b7a42e56a92404f33af8e96530d9b202 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Placing the following macros:
+{'submodule.sram0': ['125000', '125000', 'N'], 'submodule.sram1': ['125000', '695000', 'S']}
+Design name: test_sram_macro
+Placing submodule.sram0
+Placing submodule.sram1
+Successfully placed 2 instances.

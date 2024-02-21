@@ -1,0 +1,15 @@
+[ERROR]: during executing openroad script /openlane/scripts/openroad/resizer_routing_design.tcl
+[ERROR]: Log: designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/routing/20-resizer_design.log
+[ERROR]: Last 10 lines:
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0103] Extra Run for hard benchmark.
+[INFO GRT-0197] Via related to pin nodes: 2650
+[INFO GRT-0198] Via related Steiner nodes: 73
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 5464
+[INFO GRT-0112] Final usage 3D: 38033
+[ERROR GRT-0119] Routing congestion too high. Check the congestion heatmap in the GUI and load /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/routing/resizer-routing-design-congestion.rpt in the DRC viewer.
+Error: resizer_routing_design.tcl, 46 GRT-0119
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...

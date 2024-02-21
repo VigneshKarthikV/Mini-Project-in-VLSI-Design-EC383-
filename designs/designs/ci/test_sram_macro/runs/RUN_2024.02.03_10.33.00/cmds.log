@@ -1,0 +1,132 @@
+Sat Feb 03 10:33:01 UTC 2024 - Executing "{openroad -exit -no_init -python /openlane/scripts/odbpy/lefutil.py get_metal_layers -o /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/layers.list /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef}"
+
+Sat Feb 03 10:33:01 UTC 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/merged.nom.lef -i /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null}"
+
+Sat Feb 03 10:33:01 UTC 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/merged.nom.lef -i /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/merged.nom.lef /home/vignesh/.volare/sky130B/libs.ref/sky130_sram_macros/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef |& tee /dev/null}"
+
+Sat Feb 03 10:33:01 UTC 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/merged.min.lef -i /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null}"
+
+Sat Feb 03 10:33:01 UTC 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/merged.min.lef -i /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/merged.min.lef /home/vignesh/.volare/sky130B/libs.ref/sky130_sram_macros/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef |& tee /dev/null}"
+
+Sat Feb 03 10:33:01 UTC 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/merged.max.lef -i /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null}"
+
+Sat Feb 03 10:33:01 UTC 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/merged.max.lef -i /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/merged.max.lef /home/vignesh/.volare/sky130B/libs.ref/sky130_sram_macros/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef |& tee /dev/null}"
+
+Sat Feb 03 10:33:01 UTC 2024 - Executing "{python3 /openlane/scripts/mergeLib.py --output /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/synthesis/merged.lib --name sky130A_merged /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib}"
+
+Sat Feb 03 10:33:02 UTC 2024 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/synthesis/trimmed.lib.exclude.list --output /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/synthesis/trimmed.lib /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/synthesis/merged.lib}"
+
+Sat Feb 03 10:33:02 UTC 2024 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/cts/cts.lib.exclude.list --output /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/cts/cts.lib /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib}"
+
+Sat Feb 03 10:33:02 UTC 2024 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/cts/cts-fastest.lib.exclude.list --output /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/cts/cts-fastest.lib /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib}"
+
+Sat Feb 03 10:33:03 UTC 2024 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/cts/cts-slowest.lib.exclude.list --output /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/cts/cts-slowest.lib /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib}"
+
+Sat Feb 03 10:33:04 UTC 2024 - Executing "{python3 /openlane/scripts/new_tracks.py -i /home/vignesh/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/routing/config.tracks}"
+
+Sat Feb 03 10:33:04 UTC 2024 - Executing "{echo {OpenLane d8b353fb1631d4f02afd91e9fc9c7498e9a8f699} > /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/OPENLANE_VERSION}"
+
+Sat Feb 03 10:37:54 UTC 2024 - Executing "{sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib}"
+
+Sat Feb 03 10:37:54 UTC 2024 - Executing "{sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/synthesis/trimmed.lib > /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/synthesis/1-trimmed.no_pg.lib}"
+
+Sat Feb 03 10:37:54 UTC 2024 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/synthesis/1-synthesis.log"
+
+Sat Feb 03 10:37:54 UTC 2024 - Executing "{yosys -c /openlane/scripts/yosys/synth.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/synthesis/1-synthesis.log}"
+
+Sat Feb 03 10:37:55 UTC 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/designs\/ci\/test_sram_macro\/runs\/RUN_2024.02.03_10.33.00\/results\/synthesis\/test_sram_macro.v/} /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/config.tcl}"
+
+Sat Feb 03 10:37:55 UTC 2024 - Executing "{sed -i.bak /defparam/d /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/results/synthesis/test_sram_macro.v}"
+
+Sat Feb 03 10:37:56 UTC 2024 - Executing "sta -exit -no_init /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/synthesis/2-sta.log"
+
+Sat Feb 03 10:37:56 UTC 2024 - Executing "{sta -exit -no_init /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/synthesis/2-sta.log}"
+
+Sat Feb 03 10:38:07 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/floorplan.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/floorplan/3-initial_fp.log"
+
+Sat Feb 03 10:38:07 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/floorplan.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/floorplan/3-initial_fp.log}"
+
+Sat Feb 03 10:38:08 UTC 2024 - Executing "{openroad -exit -no_init -python /openlane/scripts/odbpy/defutil.py extract_core_dims --output-data /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/dimensions.txt --input-lef /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/merged.nom.lef /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/floorplan/3-initial_fp.def}"
+
+Sat Feb 03 10:38:08 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/ioplacer.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/floorplan/4-io.log"
+
+Sat Feb 03 10:38:08 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/ioplacer.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/floorplan/4-io.log}"
+
+Sat Feb 03 10:38:09 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/gpl.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/4-global.log"
+
+Sat Feb 03 10:38:09 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/gpl.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/4-global.log}"
+
+Sat Feb 03 10:38:11 UTC 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/designs\/ci\/test_sram_macro\/runs\/RUN_2024.02.03_10.33.00\/tmp\/placement\/5-global.nl.v/} /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/config.tcl}"
+
+Sat Feb 03 10:38:11 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/6-gpl_sta.log"
+
+Sat Feb 03 10:38:11 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/6-gpl_sta.log}"
+
+Sat Feb 03 10:38:11 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/basic_mp.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/7-basic_mp.log"
+
+Sat Feb 03 10:38:11 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/basic_mp.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/7-basic_mp.log}"
+
+Sat Feb 03 10:38:12 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/tapcell.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/floorplan/8-tap.log"
+
+Sat Feb 03 10:38:12 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/tapcell.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/floorplan/8-tap.log}"
+
+Sat Feb 03 10:38:12 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/pdn.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/floorplan/9-pdn.log"
+
+Sat Feb 03 10:38:12 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/pdn.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/floorplan/9-pdn.log}"
+
+Sat Feb 03 10:43:47 UTC 2024 - Executing "openroad -gui /openlane/scripts/openroad/gui.tcl |& tee /dev/null /dev/null"
+
+Sat Feb 03 10:43:47 UTC 2024 - Executing "{openroad -gui /openlane/scripts/openroad/gui.tcl |& tee /dev/null /dev/null}"
+
+Sat Feb 03 10:48:38 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/gpl.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/9-global_skip_io.log"
+
+Sat Feb 03 10:48:38 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/gpl.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/9-global_skip_io.log}"
+
+Sat Feb 03 10:48:41 UTC 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/designs\/ci\/test_sram_macro\/runs\/RUN_2024.02.03_10.33.00\/tmp\/placement\/10-global_skip_io.nl.v/} /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/config.tcl}"
+
+Sat Feb 03 10:48:41 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/11-gpl_sta.log"
+
+Sat Feb 03 10:48:41 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/11-gpl_sta.log}"
+
+Sat Feb 03 10:48:42 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/ioplacer.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/12-io.log"
+
+Sat Feb 03 10:48:42 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/ioplacer.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/12-io.log}"
+
+Sat Feb 03 10:48:43 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/gpl.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/12-global.log"
+
+Sat Feb 03 10:48:43 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/gpl.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/12-global.log}"
+
+Sat Feb 03 10:48:46 UTC 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/designs\/ci\/test_sram_macro\/runs\/RUN_2024.02.03_10.33.00\/tmp\/placement\/13-global.nl.v/} /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/config.tcl}"
+
+Sat Feb 03 10:48:46 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/14-gpl_sta.log"
+
+Sat Feb 03 10:48:46 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/14-gpl_sta.log}"
+
+Sat Feb 03 10:48:46 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/resizer.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/15-resizer.log"
+
+Sat Feb 03 10:48:46 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/resizer.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/15-resizer.log}"
+
+Sat Feb 03 10:48:49 UTC 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/designs\/ci\/test_sram_macro\/runs\/RUN_2024.02.03_10.33.00\/tmp\/placement\/15-resizer.nl.v/} /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/config.tcl}"
+
+Sat Feb 03 10:48:49 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/dpl.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/16-detailed.log"
+
+Sat Feb 03 10:48:49 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/dpl.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/16-detailed.log}"
+
+Sat Feb 03 10:48:50 UTC 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/designs\/ci\/test_sram_macro\/runs\/RUN_2024.02.03_10.33.00\/results\/placement\/test_sram_macro.nl.v/} /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/config.tcl}"
+
+Sat Feb 03 10:48:50 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/17-dpl_sta.log"
+
+Sat Feb 03 10:48:50 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/placement/17-dpl_sta.log}"
+
+Sat Feb 03 10:48:52 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/cts.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/cts/18-cts.log"
+
+Sat Feb 03 10:48:52 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/cts.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/cts/18-cts.log}"
+
+Sat Feb 03 10:48:58 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/cts/19-cts_sta.log"
+
+Sat Feb 03 10:48:58 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/cts/19-cts_sta.log}"
+
+Sat Feb 03 10:49:11 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/resizer_routing_design.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/routing/20-resizer_design.log"
+
+Sat Feb 03 10:49:11 UTC 2024 - Executing "{openroad -exit /openlane/scripts/openroad/resizer_routing_design.tcl |& tee /dev/null /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/logs/routing/20-resizer_design.log}"
+

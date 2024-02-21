@@ -1,0 +1,19 @@
+
+48. Printing statistics.
+
+=== test_sram_macro ===
+
+   Number of wires:                 14
+   Number of wire bits:            343
+   Number of public wires:          12
+   Number of public wire bits:     341
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                133
+     $_MUX_                         64
+     $_NOT_                          2
+     $_SDFFE_PN0P_                  64
+     $_SDFF_PN1_                     1
+     sky130_sram_1kbyte_1rw1r_32x256_8      2
+

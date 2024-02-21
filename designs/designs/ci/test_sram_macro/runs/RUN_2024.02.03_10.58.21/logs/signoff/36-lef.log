@@ -1,0 +1,129 @@
+
+Magic 8.3 revision 416 - Compiled on Tue Jul 25 11:03:51 UTC 2023.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Using technology "sky130A", version 1.0.461-0-gcd1748b
+Reading LEF data from file /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef.
+This action cannot be undone.
+LEF read, Line 78 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 79 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 112 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 114 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 115 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 121 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 122 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 123 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 156 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 164 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 165 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 167 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 168 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 169 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 206 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 207 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 209 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 210 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 211 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 248 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 249 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 251 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 252 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 253 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 290 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 291 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read: Processed 797 lines.
+Reading LEF data from file /home/vignesh/.volare/sky130B/libs.ref/sky130_sram_macros/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef.
+This action cannot be undone.
+LEF read: Processed 1093 lines.
+Reading DEF data from file test_sram_macro.def.
+This action cannot be undone.
+  Processed 5 vias total.
+Cell sky130_fd_sc_hd__diode_2 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__decap_3 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_ef_sc_hd__decap_12 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__decap_4 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__fill_1 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__decap_6 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__fill_2 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__decap_8 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__tapvpwrvgnd_1 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__inv_8 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__inv_2 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__buf_12 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__clkbuf_4 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__mux2_1 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__buf_1 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__dlymetal6s2s_1 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__clkbuf_16 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__clkbuf_2 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__buf_2 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__buf_6 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__clkbuf_8 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__buf_4 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__buf_8 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or2_1 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o211a_1 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nand2_1 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__dfxtp_1 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__conb_1 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__clkbuf_1 read from path /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+  Processed 50426 subcell instances total.
+  Processed 150 pins total.
+  Processed 2 special nets total.
+  Processed 827 nets total.
+DEF read: Processed 68665 lines.
+Moving label "_002_" from metal1 to via1 in cell test_sram_macro.
+Moving label "_016_" from metal1 to via1 in cell test_sram_macro.
+Moving label "_019_" from metal1 to via1 in cell test_sram_macro.
+Moving label "_025_" from metal1 to via1 in cell test_sram_macro.
+Moving label "_027_" from metal1 to via1 in cell test_sram_macro.
+Moving label "_028_" from metal1 to viali in cell test_sram_macro.
+Moving label "_029_" from metal1 to via1 in cell test_sram_macro.
+Moving label "_046_" from metal1 to via1 in cell test_sram_macro.
+Moving label "_049_" from metal1 to via1 in cell test_sram_macro.
+Moving label "_050_" from metal1 to via1 in cell test_sram_macro.
+Moving label "_055_" from metal1 to via1 in cell test_sram_macro.
+Moving label "_057_" from metal1 to via1 in cell test_sram_macro.
+Moving label "_063_" from metal1 to via1 in cell test_sram_macro.
+Moving label "_066_" from metal1 to via1 in cell test_sram_macro.
+Moving label "_181_" from metal1 to viali in cell test_sram_macro.
+Moving label "dataout[31]" from metal2 to via2 in cell test_sram_macro.
+Moving label "net126" from metal2 to via2 in cell test_sram_macro.
+Moving label "net132" from metal2 to via2 in cell test_sram_macro.
+Moving label "net136" from metal2 to via2 in cell test_sram_macro.
+Moving label "net15" from metal3 to via3 in cell test_sram_macro.
+Moving label "net152" from metal2 to via2 in cell test_sram_macro.
+Moving label "net17" from metal3 to via3 in cell test_sram_macro.
+Moving label "net190" from metal2 to via2 in cell test_sram_macro.
+Moving label "net207" from metal2 to via2 in cell test_sram_macro.
+Moving label "net26" from metal3 to via3 in cell test_sram_macro.
+Moving label "net32" from metal3 to via3 in cell test_sram_macro.
+Moving label "net34" from metal3 to via3 in cell test_sram_macro.
+Moving label "net43" from metal3 to via3 in cell test_sram_macro.
+Moving label "net54" from metal3 to via3 in cell test_sram_macro.
+Moving label "net59" from metal3 to via3 in cell test_sram_macro.
+Moving label "net61" from metal3 to via3 in cell test_sram_macro.
+Moving label "net65" from metal3 to via3 in cell test_sram_macro.
+Moving label "net70" from metal3 to via3 in cell test_sram_macro.
+Moving label "net77" from metal3 to via3 in cell test_sram_macro.
+Moving label "net78" from metal3 to via3 in cell test_sram_macro.
+Moving label "submodule.dataout_int\[26\]" from metal2 to via1 in cell test_sram_macro.
+Moving label "submodule.dataout_int\[63\]" from metal2 to via2 in cell test_sram_macro.
+Moving label "submodule.dataout_stored\[38\]" from metal1 to via1 in cell test_sram_macro.
+Moving label "submodule.dataout_stored\[52\]" from metal1 to via1 in cell test_sram_macro.
+Moving label "submodule.dataout_stored\[57\]" from metal1 to via1 in cell test_sram_macro.
+[INFO]: Writing abstract LEF
+Generating LEF output /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.58.21/results/signoff/test_sram_macro.lef for cell test_sram_macro:
+Diagnostic:  Write LEF header for cell test_sram_macro
+Diagnostic:  Writing LEF output for cell test_sram_macro
+Diagnostic:  Scale value is 0.005000
+[INFO]: LEF Write Complete

@@ -1,0 +1,50 @@
+OpenROAD 75f2f325b7a42e56a92404f33af8e96530d9b202 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/placement/5-global.odb'…
+define_corners Typical
+read_liberty -corner Typical /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_liberty -corner Typical /home/vignesh/.volare/sky130B/libs.ref/sky130_sram_macros/lib/sky130_sram_1kbyte_1rw1r_32x256_8_TT_1p8V_25C.lib
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+Reading design constraints file at '/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 5.0
+[INFO]: Setting input delay to: 5.0
+[INFO]: Setting load to: 0.033442
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+[INFO MPL-0101] Found 2 macros.
+[INFO MPL-0102] West pins 148.
+[INFO MPL-0102] East pins 0.
+[INFO MPL-0102] North pins 0.
+[INFO MPL-0102] South pins 0.
+[INFO MPL-0069] Initial weighted wire length 53351.6.
+Begin one level partition.
+[INFO MPL-0076] Partition 2 macros.
+[INFO MPL-0077] Using 1 cut lines.
+[INFO MPL-0079] Cut line 5.52.
+End one level partition.
+Begin horizontal partition.
+Begin east partition.
+[INFO MPL-0076] Partition 0 macros.
+[INFO MPL-0077] Using 0 cut lines.
+End east partition.
+Begin west partition.
+[INFO MPL-0076] Partition 2 macros.
+[INFO MPL-0077] Using 2 cut lines.
+[INFO MPL-0079] Cut line 462.40.
+[INFO MPL-0079] Cut line 796.96.
+End west partition.
+End horizontal partition.
+[INFO MPL-0070] Using 2 partition sets.
+[WARNING MPL-0061] Parquet area 479.78 x 795 exceeds the partition area 738.76 x 775.2.
+[INFO MPL-0071] Solution 1 weighted wire length 101180.
+[INFO MPL-0073] Best weighted wire length 101180.
+Writing OpenROAD database to '/openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/placement/7-macros_placed.odb'…
+Writing layout to '/openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.33.00/tmp/placement/7-macros_placed.def'…

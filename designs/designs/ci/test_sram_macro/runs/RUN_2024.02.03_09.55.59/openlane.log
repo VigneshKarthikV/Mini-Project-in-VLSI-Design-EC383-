@@ -1,0 +1,18 @@
+[INFO]: Run Directory: /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_09.55.59
+[INFO]: Saving runtime environment...
+[INFO]: Preparing LEF files for the nom corner...
+[ERROR]: during executing: "/openlane/scripts/mergeLef.py -o /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_09.55.59/tmp/merged.nom.lef -i /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_09.55.59/tmp/merged.nom.lef /openlane/pdks/sky130B/libs.ref/sky130_sram_macros/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef |& tee /dev/null"
+[ERROR]: Exit code: 1
+[ERROR]: Last 10 lines:
+mergeLef.py : Merging LEFs
+Traceback (most recent call last):
+  File "/openlane/scripts/mergeLef.py", line 79, in <module>
+    f = open(lefFile)
+FileNotFoundError: [Errno 2] No such file or directory: '/openlane/pdks/sky130B/libs.ref/sky130_sram_macros/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef'
+child process exited abnormally
+
+[INFO]: Using configuration in 'designs/designs/ci/test_sram_macro/config.json'...
+[INFO]: PDK Root: /home/vignesh/.volare
+[INFO]: Process Design Kit: sky130A
+[INFO]: Standard Cell Library: sky130_fd_sc_hd
+[INFO]: Optimization Standard Cell Library: sky130_fd_sc_hd

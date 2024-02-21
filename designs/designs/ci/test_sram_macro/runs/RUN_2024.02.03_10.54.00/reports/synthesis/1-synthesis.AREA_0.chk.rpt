@@ -1,0 +1,90 @@
+
+62. Executing CHECK pass (checking for obvious problems).
+Checking module test_sram_macro...
+Warning: Wire test_sram_macro.\dataout [63] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [62] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [61] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [60] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [59] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [58] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [57] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [56] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [55] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [54] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [53] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [52] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [51] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [50] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [49] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [48] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [47] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [46] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [45] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [44] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [43] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [42] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [41] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [40] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [39] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [38] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [37] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [36] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [35] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [34] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [33] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [32] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [31] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [30] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [29] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [28] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [27] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [26] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [25] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [24] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [23] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [22] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [21] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [20] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [19] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [18] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [17] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [16] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [15] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [14] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [13] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [12] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [11] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [10] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [9] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [8] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [7] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [6] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [5] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [4] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [3] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [2] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [1] is used but has no driver.
+Warning: Wire test_sram_macro.\dataout [0] is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:39:hilomap_worker$885 is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$883 is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$881 is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$879 is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$877 is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$875 is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$873 is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$871 is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$869 is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$867 is used but has no driver.
+Warning: Wire test_sram_macro.$abc$233$flatten\submodule.$logic_not$/openlane/designs/designs/ci/test_sram_macro/src/test_sram_macro.v:50$9_Y is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:39:hilomap_worker$865 is used but has no driver.
+Warning: Wire test_sram_macro.$abc$233$flatten\submodule.$logic_not$/openlane/designs/designs/ci/test_sram_macro/src/test_sram_macro.v:49$8_Y is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$863 is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$861 is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$859 is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$857 is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$855 is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$853 is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$851 is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$849 is used but has no driver.
+Warning: Wire test_sram_macro.$auto$hilomap.cc:47:hilomap_worker$847 is used but has no driver.
+Found and reported 86 problems.
