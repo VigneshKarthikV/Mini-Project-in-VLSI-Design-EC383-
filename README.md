@@ -1,4 +1,5 @@
 # Mini-Project-in-VLSI-Design-EC383-
+
 Repository for the RTL to GDSII flow run on Openlane for Mini Project in VLSI Design
 
 ## Directory Structure
@@ -182,6 +183,8 @@ When an unsupported instruction is found by PicoRV32 occurs it asserts pcpi_vali
 
 When no external PCPI core acknowledges the instruction within 16 clock cycles, then an illegal instruction exception is raised and the respective interrupt handler is called. A PCPI core that needs more than a couple of cycles to execute an instruction, should assert pcpi_wait as soon as the instruction has been decoded successfully and keep it asserted until it asserts pcpi_ready. This will prevent the PicoRV32 core from raising an illegal instruction exception.
 
+# Flow configuration
+
 ## Flow configuration Variables for SRAM
 
 ### Power domain
@@ -265,6 +268,20 @@ When no external PCPI core acknowledges the instruction within 16 clock cycles, 
 + Specifies the number of threads to be used in TritonRoute.  
 `"ROUTING_CORES"`: 8
 
+# PDK
+
++ ## sky130B
+
+    + 130nm technology node
+    + `sky130_fd_io` consists of general purpose I/O buffers
+    + `sky130_fd_sc_hd` has clock-gating cells to reduce active power during non-sleep modes. Latches and flip-flops have scan chain equivalents to enable scan chain creation.
+    + `sky130_sram_macros` contains the lef and gds files for the SRAM
++ ## Power rating
+    + Vdd is 1.8V
++ ## MOSFET
+    + `sky130_fd_pr__nfet_01v8 NMOS` is the NMOS device used
+    + `sky130_fd_pr__nfet_01v8 PMOS` is the NMOS device used
+
 # Results
 
 + ## GDS II file of SRAM Macro
@@ -302,11 +319,13 @@ Blue lines shown are tracks
 + ## GDS II of Picorv32
 ![Image](images/io1.png)
 
-+ ## I/O of Picorv32
++ ## Clock, Reset, PCPI and Trace data
 ![Image](images/picorv32_base.png)
 
++ ## PCPI, IRQ and EOI
 ![Image](images/io2.png)
 
++ ## PCPI, Memory Read data and Write data
 ![Image](images/io3.png)
 
 ## Running the flow for SRAM
@@ -353,6 +372,8 @@ I/O ports
 + `run_lvs`
 + `run_antenna_check`
 
+## Running the flow for Picorv32
+
 + The flow for Picorv32 was run in interactive mode  
 `flow.tcl --interactive`
 
@@ -369,8 +390,8 @@ I/O ports
 ![Image](images/core_area.png)  
 Core area  
 ![Image](images/die_area.png)  
-Die area
-![Image](images/floorplan_io.png)
+Die area  
+![Image](images/floorplan_io.png)  
 I/O ports
 
 + `run_placement`
@@ -394,3 +415,7 @@ I/O ports
 + `run_magic_drc`
 + `run_lvs`
 + `run_antenna_check`
+
+# Challenges Faced
+
+We had to check routing
