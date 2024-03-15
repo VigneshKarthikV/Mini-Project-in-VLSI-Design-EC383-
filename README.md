@@ -309,4 +309,88 @@ Blue lines shown are tracks
 
 ![Image](images/io3.png)
 
-## Running the flow
+## Running the flow for SRAM
+
++ The flow for SRAM was run in interactive mode  
+`flow.tcl --interactive`
+
++ `prep -design <design> [-tag TAG] [-config CONFIG] [-init_design_config] [-overwrite]`
+
++ `run_synthesis`
+
+![Image](images/synthesis.png)
+![Image](images/synth_sta.png)
+![Image](images/synth_sta1.png)
+
++ `run_floorplan`
+
+![Image](images/core_area.png)  
+Core area  
+![Image](images/die_area.png)  
+Die area
+![Image](images/floorplan_io.png)
+I/O ports
+
++ `run_placement`
+
+![Image](images/placement_io.png)
+![Image](images/placement_sta.png)
+![Image](images/placement_sta1.png)
+![Image](images/tapcells.png)
+
++ `run_cts`
+
++ `run_routing`
+
+![alt text](images/global_routing_sta.png)
+![alt text](images/global_routing_sta1.png)
+![alt text](images/global_routing.png)
+![alt text](images/power_routing.png)
+
++ `run_magic`
++ `run_magic_spice_export`
++ `run_magic_drc`
++ `run_lvs`
++ `run_antenna_check`
+
++ The flow for Picorv32 was run in interactive mode  
+`flow.tcl --interactive`
+
++ `prep -design <design> [-tag TAG] [-config CONFIG] [-init_design_config] [-overwrite]`
+
++ `run_synthesis`
+
+![Image](images/synthesis.png)
+![Image](images/synth_sta.png)
+![Image](images/synth_sta1.png)
+
++ `run_floorplan`
+
+![Image](images/core_area.png)  
+Core area  
+![Image](images/die_area.png)  
+Die area
+![Image](images/floorplan_io.png)
+I/O ports
+
++ `run_placement`
+
+![Image](images/placement_io.png)
+![Image](images/placement_sta.png)
+![Image](images/placement_sta1.png)
+![Image](images/tapcells.png)
+
++ `run_cts`
+
++ `run_routing`
+
+![alt text](images/global_routing_sta.png)
+![alt text](images/global_routing_sta1.png)
+![alt text](images/global_routing.png)
+![alt text](images/power_routing.png)
+
++ `run_magic`
++ `run_magic_spice_export`
++ `run_magic_drc`
++ `run_lvs`
++ `run_antenna_check`
