@@ -34,12 +34,121 @@ README.md
 + Active low write control lines `wb0` and `wb1`
 + Write mask `wmask0` for writing 8 bits for a mask bit
 
+## I/O Ports of SRAM
+
+### SRAM submodule 1
+    clk0(clk),
+    csb0(!cs),
+    web0(!we),
+    wmask0(write_allow[3:0]),
+    addr0(addr),
+    din0(datain[31:0]),
+    dout0(dataout_int[31:0])
+    clk1(1'b0),
+    csb1(1'b1),
+    addr1(1'b0),
+    dout1(dout1[31:0])
+
+### SRAM submodule 2
+    clk0(clk),
+    csb0(!cs),
+    web0(!we),
+    wmask0(write_allow[7:4]),
+    addr0(addr),
+    din0(datain[63:32]),
+    dout0(dataout_int[63:32]),
+    clk1(1'b0),
+    csb1(1'b1),
+    addr1(1'b0),
+    dout1(dout1[63:32])
+
+### SRAM
+    input rst_n,
+    input clk,
+    input cs,
+    input we,
+    input [7:0] addr,
+    input [7:0] write_allow,
+    input [63:0] datain,
+    output [63:0] dataout
+
 ## Specifications of Picorv32
 + 250 Mhz
 + Small (750-2000 LUTs in 7-Series Xilinx Architecture)
 + Selectable native memory interface or AXI4-Lite master
 + Optional IRQ support
 + Optional Co-Processor Interface
+
+## I/O Ports of Picorv32
+	input clk, resetn,
+	output reg trap,
+
+	output reg        mem_valid,
+	output reg        mem_instr,
+	input             mem_ready,
+
+	output reg [31:0] mem_addr,
+	output reg [31:0] mem_wdata,
+	output reg [ 3:0] mem_wstrb,
+	input      [31:0] mem_rdata,
+
+	// Look-Ahead Interface
+	output            mem_la_read,
+	output            mem_la_write,
+	output     [31:0] mem_la_addr,
+	output reg [31:0] mem_la_wdata,
+	output reg [ 3:0] mem_la_wstrb,
+
+	// Pico Co-Processor Interface (PCPI)
+	output reg        pcpi_valid,
+	output reg [31:0] pcpi_insn,
+	output     [31:0] pcpi_rs1,
+	output     [31:0] pcpi_rs2,
+	input             pcpi_wr,
+	input      [31:0] pcpi_rd,
+	input             pcpi_wait,
+	input             pcpi_ready,
+
+	// IRQ Interface
+	input      [31:0] irq,
+	output reg [31:0] eoi,
+    `ifdef RISCV_FORMAL
+        output reg        rvfi_valid,
+        output reg [63:0] rvfi_order,
+        output reg [31:0] rvfi_insn,
+        output reg        rvfi_trap,
+        output reg        rvfi_halt,
+        output reg        rvfi_intr,
+        output reg [ 1:0] rvfi_mode,
+        output reg [ 1:0] rvfi_ixl,
+        output reg [ 4:0] rvfi_rs1_addr,
+        output reg [ 4:0] rvfi_rs2_addr,
+        output reg [31:0] rvfi_rs1_rdata,
+        output reg [31:0] rvfi_rs2_rdata,
+        output reg [ 4:0] rvfi_rd_addr,
+        output reg [31:0] rvfi_rd_wdata,
+        output reg [31:0] rvfi_pc_rdata,
+        output reg [31:0] rvfi_pc_wdata,
+        output reg [31:0] rvfi_mem_addr,
+        output reg [ 3:0] rvfi_mem_rmask,
+        output reg [ 3:0] rvfi_mem_wmask,
+        output reg [31:0] rvfi_mem_rdata,
+        output reg [31:0] rvfi_mem_wdata,
+
+        output reg [63:0] rvfi_csr_mcycle_rmask,
+        output reg [63:0] rvfi_csr_mcycle_wmask,
+        output reg [63:0] rvfi_csr_mcycle_rdata,
+        output reg [63:0] rvfi_csr_mcycle_wdata,
+
+        output reg [63:0] rvfi_csr_minstret_rmask,
+        output reg [63:0] rvfi_csr_minstret_wmask,
+        output reg [63:0] rvfi_csr_minstret_rdata,
+        output reg [63:0] rvfi_csr_minstret_wdata,
+    `endif
+
+	// Trace Interface
+	output reg        trace_valid,
+	output reg [35:0] trace_data
 
 ## Parameters in Picorv32
 
@@ -191,11 +300,13 @@ address pins
 Blue lines shown are tracks
 
 + ## GDS II of Picorv32
-![Image](images/pircorv32_base.png)
+![Image](images/io1.png)
 
 + ## I/O of Picorv32
-![Image](images/io1.png)
+![Image](images/picorv32_base.png)
 
 ![Image](images/io2.png)
 
 ![Image](images/io3.png)
+
+## Running the flow
