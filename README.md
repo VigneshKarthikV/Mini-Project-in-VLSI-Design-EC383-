@@ -141,11 +141,11 @@ When no external PCPI core acknowledges the instruction within 16 clock cycles, 
 + Using only lower vertical layer for power distribution network.  
 `"FP_PDN_MULTILAYER"`: true
 ### Floorplanning and placement
-    "DIE_AREA": "0 0 100 100",
+    "DIE_AREA": "0 0 3000 3000",
     "FP_CORE_UTIL": 45,
     "PL_TARGET_DENSITY": 0.47
 + Die Area  
-`"DIE_AREA"`: "0 0 750 1250"
+`"DIE_AREA"`: "0 0 3000 3000"
 + Core Utilisation
 `"FP_CORE_UTIL"`: 45
 + Placement target density  
@@ -155,3 +155,47 @@ When no external PCPI core acknowledges the instruction within 16 clock cycles, 
     "ROUTING_CORES": 8
 + Specifies the number of threads to be used in TritonRoute.  
 `"ROUTING_CORES"`: 8
+
+# Results
+
++ ## GDS II file of SRAM Macro
+![Image](images/Test2.png)  
+The submodule SRAM is mainly consisting of metal 2
+
++ ## VSSD1
+![Image](images/vssd1.png)  
+Uses metal 4 mainly to route clock nets which is in red colour
+
++ ## VCCD1, VSSD1 and Power nets
+![Image](images/powernets.png)  
+The box shown contains VCCD1 and VDD1
+
++ ## Clock net
+![Image](images/clock_net.png)  
+Uses metal 3 to route clock nets which is in green colour
+
++ ## Data in of SRAM
+![Image](images/data_in.png)  
+data_in pins
+
++ ## Data out of SRAM
+![Image](images/data_out.png)  
+data_out pins
+
++ ## Address Bus of SRAM
+![Image](images/address_bus.png)  
+address pins
+
++ ## Tracks
+![Image](images/tracks.png)  
+Blue lines shown are tracks
+
++ ## GDS II of Picorv32
+![Image](images/pircorv32_base.png)
+
++ ## I/O of Picorv32
+![Image](images/io1.png)
+
+![Image](images/io2.png)
+
+![Image](images/io3.png)
