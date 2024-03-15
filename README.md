@@ -22,6 +22,7 @@ designs/
 │   └── config.json  
 │   └── pin_oder.cfg  
 flow.tcl  
+images  
 README.md
 
 ## Specifications of SRAM
