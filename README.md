@@ -286,35 +286,35 @@ When no external PCPI core acknowledges the instruction within 16 clock cycles, 
 
 + ## GDS II file of SRAM Macro
 ![Image](images/Test2.png)  
-<div style="text-align: center">The submodule SRAM is mainly consisting of metal 2</div>
+<div style="text-align: center; margin-bottom: 50px; margin-top: -15px">The submodule SRAM is mainly consisting of metal 2</div>
 
 + ## VSSD1
 ![Image](images/vssd1.png)  
-<div style="text-align: center">Uses metal 4 mainly to route clock nets which is in red colour</div>
+<div style="text-align: center; margin-bottom: 50px; margin-top: -15px">Uses metal 4 mainly to route clock nets which is in red colour</div>
 
 + ## VCCD1, VSSD1 and Power nets
 ![Image](images/powernets.png)  
-<div style="text-align: center">The box shown contains VCCD1 and VDD1</div>
+<div style="text-align: center; margin-bottom: 50px; margin-top: -15px">The box shown contains VCCD1 and VDD1</div>
 
 + ## Clock net
 ![Image](images/clock_net.png)  
-<div style="text-align: center">Uses metal 3 to route clock nets which is in green colour</div>
+<div style="text-align: center; margin-bottom: 50px; margin-top: -15px">Uses metal 3 to route clock nets which is in green colour</div>
 
 + ## Data in of SRAM
 ![Image](images/data_in.png)  
-<div style="text-align: center">data_in pins</div>
+<div style="text-align: center; margin-bottom: 50px; margin-top: -15px">data_in pins</div>
 
 + ## Data out of SRAM
 ![Image](images/data_out.png)  
-<div style="text-align: center">data_out pins</div>
+<div style="text-align: center; margin-bottom: 50px; margin-top: -15px">data_out pins</div>
 
 + ## Address Bus of SRAM
 ![Image](images/address_bus.png)  
-<div style="text-align: center">address pins</div>
+<div style="text-align: center; margin-bottom: 50px; margin-top: -15px">address pins</div>
 
 + ## Tracks
 ![Image](images/tracks.png)  
-<div style="text-align: center">Blue lines shown are tracks</div>
+<div style="text-align: center; margin-bottom: 50px; margin-top: -15px">Blue lines shown are tracks</div>
 
 + ## GDS II of Picorv32
 ![Image](images/io1.png)
@@ -335,13 +335,19 @@ When no external PCPI core acknowledges the instruction within 16 clock cycles, 
 
 + `prep -design <design> [-tag TAG] [-config CONFIG] [-init_design_config] [-overwrite]`
 
-+ `run_synthesis`
++ `run_synthesis`  
 
 ![Image](images/synthesis.png)
-![Image](images/synth_sta.png)
-![Image](images/synth_sta1.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">Synthesis</div>
 
-+ `run_floorplan`
+![Image](images/synth_sta.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">Synthesis STA</div>
+
+![Image](images/synth_sta1.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">Synthesis STA Slack</div>
+
+
++ `run_floorplan`  
 
 ![Image](images/core_area.png)  
 Core area  
@@ -350,21 +356,37 @@ Die area
 ![Image](images/floorplan_io.png)
 I/O ports
 
-+ `run_placement`
++ `run_placement`  
 
 ![Image](images/placement_io.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">I/O ports</div>
+
 ![Image](images/placement_sta.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">Placement STA</div>
+
 ![Image](images/placement_sta1.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">Placement STA Slack</div>
+
 ![Image](images/tapcells.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">Filler cells and endcaps</div>
+
 
 + `run_cts`
 
 + `run_routing`
 
 ![alt text](images/global_routing_sta.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">Global Routing STA</div>
+
 ![alt text](images/global_routing_sta1.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">Global Routing STA Slack</div>
+
 ![alt text](images/global_routing.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">Routing Layers</div>
+
 ![alt text](images/power_routing.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">Power nets</div>
+
 
 + `run_magic`
 + `run_magic_spice_export`
@@ -379,36 +401,46 @@ I/O ports
 
 + `prep -design <design> [-tag TAG] [-config CONFIG] [-init_design_config] [-overwrite]`
 
-+ `run_synthesis`
++ `run_synthesis`  
 
-![Image](images/synthesis.png)
-![Image](images/synth_sta.png)
-![Image](images/synth_sta1.png)
+![Image](images/synthesis_picorv32.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">Synthesis</div>
 
-+ `run_floorplan`
+![Image](images/sta_picorv32.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">Synthesis STA</div>
 
-![Image](images/core_area.png)  
+![Image](images/sta_picorv32_path.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">Synthesis STA Slack</div>
+
+
++ `run_floorplan`  
+
+![Image](images/core_area_picorv32.png)  
 Core area  
-![Image](images/die_area.png)  
+![Image](images/die_area_picorv32.png)  
 Die area  
-![Image](images/floorplan_io.png)  
+![Image](images/io_picorv32.png)  
 I/O ports
 
-+ `run_placement`
++ `run_placement`  
 
-![Image](images/placement_io.png)
-![Image](images/placement_sta.png)
-![Image](images/placement_sta1.png)
-![Image](images/tapcells.png)
+![Image](images/filler_picorv32.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">Filler cells and endcaps</div>
 
-+ `run_cts`
+![Image](images/pdn_picorv32.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">PDN</div>
 
-+ `run_routing`
++ `run_cts`  
+![Image](images/cts_picorv32.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">CTS</div>
 
-![alt text](images/global_routing_sta.png)
-![alt text](images/global_routing_sta1.png)
-![alt text](images/global_routing.png)
-![alt text](images/power_routing.png)
+
++ `run_routing`  
+![Image](images/routing_picorv32.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">Routing</div>
+
+![Image](images/layers_picorv32.png)
+<div style="text-align: center; margin-bottom: 30px; margin-top: -20px">Routing Layers</div>
 
 + `run_magic`
 + `run_magic_spice_export`
@@ -416,8 +448,9 @@ I/O ports
 + `run_lvs`
 + `run_antenna_check`
 
-# Challenges Faced
+## Challenges Faced
 
+### Errors
 - Routing congestion issues.
 - [INFO GRT-0101] Running extra iterations
 to remove overflow.
@@ -428,8 +461,6 @@ exceed number of valid positions (384).
 - [ERROR DPL-0036] Detailed placement
 failed.
 Error: resizer.tcl, 79 DPL-0036
-- [ERROR DPL-0036] Detailed placement
-failed. Error: resizer.tcl, 79 DPL-0036
 
 ### Fixes
 - Fixes for routing congestion:
