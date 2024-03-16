@@ -286,35 +286,35 @@ When no external PCPI core acknowledges the instruction within 16 clock cycles, 
 
 + ## GDS II file of SRAM Macro
 ![Image](images/Test2.png)  
-The submodule SRAM is mainly consisting of metal 2
+<div style="text-align: center">The submodule SRAM is mainly consisting of metal 2</div>
 
 + ## VSSD1
 ![Image](images/vssd1.png)  
-Uses metal 4 mainly to route clock nets which is in red colour
+<div style="text-align: center">Uses metal 4 mainly to route clock nets which is in red colour</div>
 
 + ## VCCD1, VSSD1 and Power nets
 ![Image](images/powernets.png)  
-The box shown contains VCCD1 and VDD1
+<div style="text-align: center">The box shown contains VCCD1 and VDD1</div>
 
 + ## Clock net
 ![Image](images/clock_net.png)  
-Uses metal 3 to route clock nets which is in green colour
+<div style="text-align: center">Uses metal 3 to route clock nets which is in green colour</div>
 
 + ## Data in of SRAM
 ![Image](images/data_in.png)  
-data_in pins
+<div style="text-align: center">data_in pins</div>
 
 + ## Data out of SRAM
 ![Image](images/data_out.png)  
-data_out pins
+<div style="text-align: center">data_out pins</div>
 
 + ## Address Bus of SRAM
 ![Image](images/address_bus.png)  
-address pins
+<div style="text-align: center">address pins</div>
 
 + ## Tracks
 ![Image](images/tracks.png)  
-Blue lines shown are tracks
+<div style="text-align: center">Blue lines shown are tracks</div>
 
 + ## GDS II of Picorv32
 ![Image](images/io1.png)
@@ -418,4 +418,37 @@ I/O ports
 
 # Challenges Faced
 
-We had to check routing
+- Routing congestion issues.
+- [INFO GRT-0101] Running extra iterations
+to remove overflow.
+[INFO GRT-0103] Extra Run for hard
+benchmark.
+- [ERROR PPL-0072] Number of pins (409)
+exceed number of valid positions (384).
+- [ERROR DPL-0036] Detailed placement
+failed.
+Error: resizer.tcl, 79 DPL-0036
+- [ERROR DPL-0036] Detailed placement
+failed. Error: resizer.tcl, 79 DPL-0036
+
+### Fixes
+- Fixes for routing congestion:
+    - Reduce placement utilization or increase area if set manually.
+- Fix for abnormally high routing time:
+    - Increase Area or `fp_core_util`
+- Fix for Insufficient pins:
+    - Increase placement utilization
+- Possible Fixes for hold violations:
+    - Increase Capacitance Increase core utilization percentage
+    - Decrease number of CTS sinks
+    - Decrease drive strength of buffers
+    - Increase no. of buffers placed
+Note that most of the hold violation fixes
+reduce setup slack so there is a ideal balance
+between the two.
+- Possible Fixes for setup violations:
+    - Reduced clock speed
+    - Decrease Capacitance
+    - Increase number of CTS sinks
+    - Increase drive strength of buffers
+    - Increase no. of buffers placed
