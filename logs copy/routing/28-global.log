@@ -1,0 +1,165 @@
+OpenROAD 75f2f325b7a42e56a92404f33af8e96530d9b202 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.58.21/tmp/26-test_sram_macro.odb'…
+define_corners Typical
+read_liberty -corner Typical /home/vignesh/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_liberty -corner Typical /home/vignesh/.volare/sky130B/libs.ref/sky130_sram_macros/lib/sky130_sram_1kbyte_1rw1r_32x256_8_TT_1p8V_25C.lib
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+Reading design constraints file at '/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 5.0
+[INFO]: Setting input delay to: 5.0
+[INFO]: Setting load to: 0.033442
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose -congestion_report_file /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.58.21/tmp/routing/groute-congestion.rpt
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 14 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 13
+[INFO GRT-0003] Macros: 2
+[INFO GRT-0004] Blockages: 1304
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal     389824        117159          69.95%
+met2       Vertical       296125        115440          61.02%
+met3       Horizontal     194858         79539          59.18%
+met4       Vertical       118812         44266          62.74%
+met5       Horizontal      38950         10918          71.97%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0197] Via related to pin nodes: 2617
+[INFO GRT-0198] Via related Steiner nodes: 50
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 3227
+[INFO GRT-0112] Final usage 3D: 24607
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1            117159          5873            5.01%             0 /  0 /  0
+met2            115440          7377            6.39%             0 /  0 /  0
+met3             79539           714            0.90%             0 /  0 /  0
+met4             44266           905            2.04%             0 /  0 /  0
+met5             10918            57            0.52%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           367322         14926            4.06%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 116934 um
+[INFO GRT-0014] Routed nets: 763
+[INFO GRT-0006] Repairing antennas, iteration 1.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[WARNING ANT-0009] Net net138 requires more than 10 diodes per gate to repair violations.
+[INFO GRT-0012] Found 16 antenna violations.
+[INFO GRT-0015] Inserted 30 diodes.
+[INFO GRT-0054] Using detailed placer to place 2 diodes.
+[INFO GRT-0009] rerouting 481 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 14
+[INFO GRT-0006] Repairing antennas, iteration 2.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[WARNING ANT-0009] Net net137 requires more than 10 diodes per gate to repair violations.
+[INFO GRT-0012] Found 5 antenna violations.
+[INFO GRT-0015] Inserted 30 diodes.
+[INFO GRT-0054] Using detailed placer to place 1 diodes.
+[INFO GRT-0009] rerouting 69 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 14
+[INFO GRT-0006] Repairing antennas, iteration 3.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 0 antenna violations.
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL           77684.8 u
+legalized HPWL          77684.8 u
+delta HPWL                    0 %
+
+[INFO DPL-0020] Mirrored 306 instances
+[INFO DPL-0021] HPWL before           77684.8 u
+[INFO DPL-0022] HPWL after            77172.5 u
+[INFO DPL-0023] HPWL delta               -0.7 %
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose -congestion_report_file /openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.58.21/tmp/routing/groute-congestion.rpt
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 14 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 14
+[INFO GRT-0003] Macros: 2
+[INFO GRT-0004] Blockages: 1304
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal     389824        117159          69.95%
+met2       Vertical       296125        115438          61.02%
+met3       Horizontal     194858         79541          59.18%
+met4       Vertical       118812         44266          62.74%
+met5       Horizontal      38950         10918          71.97%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0197] Via related to pin nodes: 2649
+[INFO GRT-0198] Via related Steiner nodes: 48
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 3259
+[INFO GRT-0112] Final usage 3D: 24723
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1            117159          5863            5.00%             0 /  0 /  0
+met2            115438          7377            6.39%             0 /  0 /  0
+met3             79541           743            0.93%             0 /  0 /  0
+met4             44266           906            2.05%             0 /  0 /  0
+met5             10918            57            0.52%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           367322         14946            4.07%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 117251 um
+[INFO GRT-0014] Routed nets: 763
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.58.21/tmp/routing/28-global.odb'…
+Writing layout to '/openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.58.21/tmp/routing/28-global.def'…
+Writing routing guides to '/openlane/designs/designs/ci/test_sram_macro/runs/RUN_2024.02.03_10.58.21/tmp/routing/28-global.guide'…
